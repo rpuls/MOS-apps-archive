@@ -1,0 +1,140 @@
+{
+  "manifestVersion": 1,
+  "id": "stirling-pdf",
+  "name": "Stirling PDF",
+  "version": "0.2.6",
+  "appVersion": "2.10.0",
+  "minimumMosVersion": "0.20.0",
+  "summary": "Merge, split, sign and redact PDFs without uploading them to a stranger's website.",
+  "category": "office",
+  "icon": "icon.png",
+  "packageFiles": [
+    "screenshots/workspace.png",
+    "screenshots/merge.png",
+    "screenshots/redact.png",
+    "screenshots/ocr.png"
+  ],
+  "catalog": {
+    "description": "Stirling PDF gives you a private toolbox for everyday document work: merge, split, compress, convert, OCR, sign, redact, and automate PDFs without uploading them to random websites.",
+    "screenshots": [
+      {
+        "src": "screenshots/workspace.png",
+        "alt": "The Stirling PDF workspace, with the tool list down the left and a household bill open in the document viewer",
+        "caption": "The whole toolbox, with your document already open"
+      },
+      {
+        "src": "screenshots/merge.png",
+        "alt": "The Stirling PDF merge tool with six household documents queued as numbered cards, ready to combine into one file",
+        "caption": "Six separate statements into one file, in the order you pick"
+      },
+      {
+        "src": "screenshots/redact.png",
+        "alt": "The Stirling PDF redaction tool set to black out a name, beside the payslip it will be applied to",
+        "caption": "Black out a name or a number before you pass it on"
+      },
+      {
+        "src": "screenshots/ocr.png",
+        "alt": "The Stirling PDF OCR tool set to English, beside a scanned energy bill waiting to be recognised",
+        "caption": "Turn a scan into text you can search, without uploading it anywhere"
+      }
+    ],
+    "demoDeployTargets": [
+      {
+        "provider": "railway",
+        "label": "Railway",
+        "url": "https://railway.com/deploy/stirling-pdf-2?referralCode=-Yg50p"
+      }
+    ],
+    "replaces": [
+      "Adobe Acrobat",
+      "iLovePDF",
+      "Smallpdf",
+      "PDF24",
+      "Sejda",
+      "Soda PDF",
+      "Nitro PDF",
+      "Foxit PDF"
+    ],
+    "tags": [
+      "pdf",
+      "documents",
+      "paperwork",
+      "ocr",
+      "tools",
+      "adobe-acrobat-alternative"
+    ],
+    "features": [
+      {
+        "title": "Fix everyday PDF problems",
+        "body": "Merge, split, compress, rotate, redact, sign, and convert documents from one private web app."
+      },
+      {
+        "title": "Keep sensitive files local",
+        "body": "Run document tools on your own server instead of sending private files to third-party upload sites."
+      },
+      {
+        "title": "Automate repeat work",
+        "body": "Use pipelines for repeatable document workflows when the same manual steps keep coming back."
+      }
+    ],
+    "resourceHint": {
+      "level": "medium",
+      "label": "Medium resources",
+      "description": "One service that sits quietly between jobs, but wants a spare gigabyte and a couple of cores while it reads a scan or converts an office document."
+    },
+    "privacy": {
+      "summary": "MOS configures the self-hosted server to process ordinary PDF tasks locally and disable known optional analytics.",
+      "notes": [
+        "Persistent app data is kept in package-owned volumes.",
+        "User-invoked features such as trusted timestamping can contact an external service.",
+        "The assessment is configuration- and documentation-based; it does not prove complete network silence."
+      ]
+    },
+    "links": {
+      "website": "https://www.stirling.com/",
+      "docs": "https://docs.stirlingpdf.com/",
+      "repository": "https://github.com/Stirling-Tools/Stirling-PDF"
+    }
+  },
+  "resources": {
+    "services": {
+      "stirling-pdf": {
+        "dockerfile": "Dockerfile",
+        "internalPort": 8080,
+        "env": {
+          "SERVER_HOST": "${app.publicUrl}",
+          "SYSTEM_ENABLEANALYTICS": "false"
+        },
+        "volumes": [
+          "training-data:/usr/share/tessdata",
+          "configs:/configs",
+          "custom-files:/customFiles",
+          "logs:/logs",
+          "pipeline:/pipeline"
+        ],
+        "requires": {
+          "cpuCores": 0.25,
+          "memoryMb": 1024,
+          "cpuPeakCores": 2,
+          "memoryPeakMb": 2048
+        }
+      }
+    }
+  },
+  "routes": [
+    {
+      "host": "stirling-pdf",
+      "service": "stirling-pdf"
+    }
+  ],
+  "homepage": {
+    "group": "Tools",
+    "name": "Stirling PDF",
+    "description": "Work with PDFs without uploading documents elsewhere.",
+    "icon": "stirling-pdf"
+  },
+  "health": {
+    "type": "http",
+    "url": "http://stirling-pdf:8080/api/v1/info/status"
+  }
+}

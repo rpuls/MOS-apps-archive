@@ -1,0 +1,133 @@
+{
+  "schemaVersion": 1,
+  "appId": "radicale",
+  "reviewedAt": "2026-07-31T00:00:00.000Z",
+  "expiresAt": "2027-01-31T00:00:00.000Z",
+  "scope": {
+    "packageVersion": "0.5.0",
+    "packageDigest": "sha256:12c1f7a5addd9b8708009267472f6d2cb672505c8982278a500d8b7914592de5",
+    "source": {
+      "kind": "official-git",
+      "repository": "https://github.com/rpuls/my-own-suite",
+      "path": "apps/radicale",
+      "revision": "59a4e004337e5f72e7f9b24107dab376cdd7af5a",
+      "trust": "mos-reviewed"
+    },
+    "components": [
+      {
+        "name": "Radicale",
+        "version": "3.7.6",
+        "artifact": "docker.io/tomsquest/docker-radicale",
+        "digest": "sha256:89fa44d02b134f0ac37cad809883327af8424499d913eec74f95085c458a93b7"
+      }
+    ],
+    "clientsExcluded": [
+      "CalDAV and CardDAV client apps on phones, tablets, and desktops (for example Apple Calendar, DAVx5, Thunderbird)",
+      "Device or vendor cloud backups configured within those client apps"
+    ]
+  },
+  "posture": "private-by-default",
+  "dimensions": {
+    "defaultEgress": "none",
+    "control": "nothing-to-decide",
+    "accountDependency": "local-only",
+    "dataProcessing": "local",
+    "policyExposure": "self-hosted-software-only",
+    "confidence": "documented"
+  },
+  "evidence": [
+    {
+      "type": "configured",
+      "claim": "The MOS package projects only RADICALE_ADMIN_USERNAME, RADICALE_ADMIN_PASSWORD, and RADICALE_CALENDAR_DISPLAYNAME into the service and mounts one local data volume; it sets no analytics, update-check, external-service, or telemetry variables.",
+      "source": "apps/radicale/manifest.json"
+    },
+    {
+      "type": "configured",
+      "claim": "The package entrypoint configures htpasswd authentication with bcrypt against a local /data/users file and creates the bootstrap user, a default calendar collection named from the locally supplied RADICALE_CALENDAR_DISPLAYNAME value, and one locally generated all-day starter event on the local data volume; no upstream account or service is contacted during provisioning, and the starter event contains no identifying data beyond a random UID and the install date.",
+      "source": "apps/radicale/entrypoint.sh"
+    },
+    {
+      "type": "documented",
+      "claim": "Radicale 3.7.6 is a self-hosted CalDAV/CardDAV server that serves DAV over its own port and stores collections on the local filesystem; its documentation contains no mention of telemetry, usage analytics, update checks, or phone-home behaviour.",
+      "source": "Radicale project documentation (v3)",
+      "url": "https://radicale.org/v3.html",
+      "retrievedAt": "2026-07-24"
+    },
+    {
+      "type": "observed",
+      "claim": "The pinned tomsquest/docker-radicale 3.7.6.0 build installs only radicale, passlib[bcrypt], argon2-cffi, pytz, and ldap3 into a local venv and adds a loopback curl healthcheck; it introduces no outbound analytics, licensing, or update service. Its Dockerfile, entrypoint, and env-config helper are byte-identical to the previously reviewed 3.7.1.0 build apart from the default version string.",
+      "source": "tomsquest/docker-radicale Dockerfile at tag 3.7.6.0",
+      "url": "https://github.com/tomsquest/docker-radicale/blob/3.7.6.0/Dockerfile",
+      "retrievedAt": "2026-07-24"
+    },
+    {
+      "type": "documented",
+      "claim": "Radicale supports optional IMAP, LDAP, OAuth2, and SMTP authentication backends that would contact an external server, and 3.7.6 adds an imap_append_domain option to the IMAP backend. None are reachable in this package: the entrypoint pins auth type to htpasswd against a local file, and no manifest field exposes an alternative authentication backend.",
+      "source": "Radicale project documentation (v3) and apps/radicale/entrypoint.sh",
+      "url": "https://radicale.org/v3.html",
+      "retrievedAt": "2026-07-24"
+    },
+    {
+      "type": "configured",
+      "claim": "All calendar and contact data is persisted to the single data:/data package volume, so CalDAV/CardDAV collections stay within the MOS runtime rather than any upstream store.",
+      "source": "apps/radicale/manifest.json and apps/radicale/README.md"
+    },
+    {
+      "type": "observed",
+      "claim": "A packet capture on the Docker bridge of the built package container recorded no DNS queries and no packets to any routable address across first boot with user and calendar provisioning, idle time, authenticated and rejected CalDAV requests, an event write, a calendar export, recovery from a hard kill, and a clean restart; the only captured traffic was the test client's requests to the Radicale port plus link-local ARP and IPv6 multicast housekeeping from the kernel.",
+      "source": "tcpdump capture of the locally built package image (docker0 bridge), 2026-07-31",
+      "retrievedAt": "2026-07-31"
+    },
+    {
+      "type": "documented",
+      "claim": "The docker-radicale image maintainer confirmed in writing that to his knowledge the image contains no telemetry, noting that nearly all behaviour comes from Radicale itself.",
+      "source": "tomsquest/docker-radicale issue 238, maintainer reply",
+      "url": "https://github.com/tomsquest/docker-radicale/issues/238",
+      "retrievedAt": "2026-07-31"
+    },
+    {
+      "type": "configured",
+      "claim": "MOS wires Radicale's [hook] email notifications to the shared, optional MOS email relay. Radicale can email the attendees of a calendar event when it changes; the entrypoint writes this [hook] configuration only when the owner has set a relay under Settings → Email relay, and removes it when they have not, so Radicale sends no mail by default. When set, notices go through the owner's own chosen provider. This is the narrowest of Radicale's outbound features — attendee notices only — and is separate from the authentication backends above; MOS never uses the relay itself.",
+      "source": "apps/radicale/entrypoint.sh and apps/radicale/manifest.json"
+    }
+  ],
+  "telemetryControls": [
+    {
+      "type": "documented",
+      "claim": "Radicale ships no telemetry, analytics, or update-check behaviour, so no telemetry-disabling configuration is required or applied by the package.",
+      "source": "Radicale project documentation (v3)",
+      "url": "https://radicale.org/v3.html",
+      "retrievedAt": "2026-07-24"
+    }
+  ],
+  "policies": [
+    {
+      "kind": "license",
+      "url": "https://github.com/Kozea/Radicale/blob/v3.7.6/COPYING.md",
+      "retrievedAt": "2026-07-24",
+      "publisher": "Radicale project (Kozea)"
+    },
+    {
+      "kind": "license",
+      "url": "https://github.com/tomsquest/docker-radicale/blob/master/LICENSE",
+      "retrievedAt": "2026-07-24",
+      "publisher": "Thomas Queste (tomsquest)"
+    }
+  ],
+  "provenance": {
+    "method": "ai-assisted",
+    "provider": "Anthropic",
+    "model": "Fable 5",
+    "modelIdentifierSource": "runtime-reported",
+    "skill": "assess-app-privacy",
+    "skillRevision": "6a741118713a2db4fd0323334fe39cc0d8021197",
+    "repositoryCommit": "59a4e004337e5f72e7f9b24107dab376cdd7af5a",
+    "humanReviewed": true,
+    "humanReviewer": "Rasmus Puls"
+  },
+  "openQuestions": [
+    "The 2026-07-31 packet capture covered minutes of provisioning, active use, crash recovery, and restarts; outbound behaviour on longer timers than that window is excluded by the code and build-definition review rather than by observation.",
+    "CalDAV/CardDAV client apps may copy synced calendar and contact data into device or vendor cloud backups depending on each client's settings, which is outside the server package's control.",
+    "The package provisions a single bootstrap Radicale user; multi-user authentication, password rotation, and DAV auto-discovery are future package work not covered by this review."
+  ]
+}

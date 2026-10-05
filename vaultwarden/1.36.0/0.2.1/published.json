@@ -1,0 +1,22 @@
+{
+  "app": "vaultwarden",
+  "appVersion": "1.36.0",
+  "packageVersion": "0.2.1",
+  "packageDigest": "sha256:04584178b365ed9a49e3ed2562934391c643f89740305ebe0663de6af0715a5e",
+  "publishedAt": "2026-07-24T23:29:59+02:00",
+  "publishedFrom": {
+    "commit": "a80fd81a04e2ebd178219eb56ba89171331bc6e7",
+    "repository": "https://github.com/rpuls/my-own-suite",
+    "url": "https://github.com/rpuls/my-own-suite/tree/a80fd81a04e2ebd178219eb56ba89171331bc6e7/apps/vaultwarden"
+  },
+  "catalogEntry": {
+    "minimumMosVersion": "0.1.0",
+    "packageDigest": "sha256:04584178b365ed9a49e3ed2562934391c643f89740305ebe0663de6af0715a5e",
+    "packageVersion": "0.2.1",
+    "path": "apps/vaultwarden",
+    "privacy": {
+      "posture": "privacy-configured",
+      "status": "reviewed"
+    }
+  }
+}

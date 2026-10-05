@@ -1,0 +1,2 @@
+# Snapshots are kept byte for byte, so their package digests can be recomputed.
+* -text

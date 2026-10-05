@@ -1,0 +1,178 @@
+{
+  "manifestVersion": 1,
+  "id": "vaultwarden",
+  "name": "Vaultwarden",
+  "version": "0.4.0",
+  "appVersion": "1.37.0",
+  "minimumMosVersion": "0.21.0",
+  "requirements": {
+    "https": true
+  },
+  "summary": "Every password, on every device, in a vault only you hold the key to.",
+  "category": "security",
+  "icon": "icon.png",
+  "packageFiles": [
+    "screenshots/vault.png",
+    "screenshots/item.png",
+    "screenshots/generator.png",
+    "screenshots/send.png"
+  ],
+  "catalog": {
+    "description": "Vaultwarden lets you use the familiar Bitwarden apps with your own private backend for passwords, secure notes, cards, identities, and shared vaults.",
+    "screenshots": [
+      {
+        "src": "screenshots/vault.png",
+        "alt": "The Vaultwarden web vault listing a household's saved logins, cards and notes, with folders for home, money, health and work down the side",
+        "caption": "Every login in one place, filed the way you think about them"
+      },
+      {
+        "src": "screenshots/item.png",
+        "alt": "A saved bank login open in Vaultwarden, showing the username, a hidden password and a two-factor code counting down",
+        "caption": "One entry up close, two-factor code included"
+      },
+      {
+        "src": "screenshots/generator.png",
+        "alt": "The Vaultwarden password generator with length and character options and a freshly generated password",
+        "caption": "A strong new password instead of the one you reuse"
+      },
+      {
+        "src": "screenshots/send.png",
+        "alt": "The Vaultwarden Send composer, sharing a note with a seven-day expiry and a limit on who can view it",
+        "caption": "Hand one thing to one person, with an expiry on it"
+      }
+    ],
+    "demoDeployTargets": [
+      {
+        "provider": "railway",
+        "label": "Railway",
+        "url": "https://railway.com/deploy/vaultwarden-3?referralCode=-Yg50p"
+      }
+    ],
+    "replaces": [
+      "LastPass",
+      "1Password",
+      "Bitwarden cloud",
+      "Dashlane",
+      "Google Password Manager",
+      "iCloud Keychain",
+      "NordPass",
+      "Keeper",
+      "Proton Pass"
+    ],
+    "tags": [
+      "passwords",
+      "security",
+      "bitwarden",
+      "password-manager",
+      "family-sharing"
+    ],
+    "features": [
+      {
+        "title": "Use Bitwarden clients",
+        "body": "Connect browser extensions, mobile apps, desktop apps, and the web vault to your own server."
+      },
+      {
+        "title": "Keep vault data encrypted",
+        "body": "Vault data is encrypted by the client before it reaches the server, so the server stores encrypted vault data."
+      },
+      {
+        "title": "Share with family or a team",
+        "body": "Use Bitwarden-compatible organization and collection features for shared credentials when you need them."
+      }
+    ],
+    "resourceHint": {
+      "level": "low",
+      "label": "Light resources",
+      "description": "This MOS package runs Vaultwarden as one service using its built-in SQLite storage."
+    },
+    "privacy": {
+      "summary": "Vaultwarden runs entirely on your own server with no telemetry, storing client-encrypted vault data locally, while your master password remains your responsibility.",
+      "notes": [
+        "Use a strong, unique master password.",
+        "Enable two-factor authentication where possible.",
+        "Keep backups, because losing the app data volume can mean losing the vault.",
+        "By default the server fetches website icons from the sites you save, which can reveal those domains to third parties; you can turn icon downloading off in Vaultwarden if you prefer."
+      ]
+    },
+    "links": {
+      "repository": "https://github.com/dani-garcia/vaultwarden",
+      "docs": "https://bitwarden.com/help/managing-items/"
+    }
+  },
+  "setup": {
+    "fields": [
+      {
+        "id": "adminToken",
+        "type": "password",
+        "label": "Admin token",
+        "required": true,
+        "secret": true,
+        "redactedLabel": "Generated Vaultwarden admin token",
+        "generated": {
+          "kind": "random",
+          "bytes": 32,
+          "encoding": "base64url"
+        }
+      }
+    ]
+  },
+  "resources": {
+    "services": {
+      "vaultwarden": {
+        "dockerfile": "Dockerfile",
+        "internalPort": 80,
+        "env": {
+          "ADMIN_TOKEN": "${secret.adminToken}",
+          "DOMAIN": "${app.publicUrl}",
+          "SIGNUPS_ALLOWED": "true",
+          "WEBSOCKET_ENABLED": "true",
+          "SMTP_HOST": "${smtp.host}",
+          "SMTP_PORT": "${smtp.port}",
+          "SMTP_USERNAME": "${smtp.username}",
+          "SMTP_PASSWORD": "${smtp.password}",
+          "SMTP_FROM": "${smtp.fromAddress}",
+          "SMTP_FROM_NAME": "${smtp.fromName}",
+          "SMTP_ACCEPT_INVALID_CERTS": "${smtp.allowInvalidCert}",
+          "MOS_SMTP_START_TLS": "${smtp.startTls}",
+          "MOS_SMTP_IMPLICIT_TLS": "${smtp.implicitTls}"
+        },
+        "volumes": [
+          "data:/data"
+        ]
+      }
+    }
+  },
+  "routes": [
+    {
+      "host": "vaultwarden",
+      "service": "vaultwarden"
+    }
+  ],
+  "homepage": {
+    "group": "Security",
+    "name": "Vaultwarden",
+    "description": "Keep passwords and secure notes on your own server.",
+    "icon": "vaultwarden"
+  },
+  "health": {
+    "type": "http",
+    "url": "http://vaultwarden:80/alive"
+  },
+  "onboarding": {
+    "title": "Set up Vaultwarden",
+    "sections": [
+      {
+        "id": "first-account",
+        "type": "steps",
+        "title": "Create the first Vaultwarden account",
+        "body": "Open Vaultwarden over its generated app URL and create the owner account before storing shared credentials."
+      },
+      {
+        "id": "admin-token",
+        "type": "note",
+        "title": "Admin token generated",
+        "body": "MOS generates a strong admin token for the Vaultwarden admin panel and stores only a secret reference plus fingerprint in Suite Manager state. This slice does not yet include an owner-facing reveal or rotation flow."
+      }
+    ]
+  }
+}

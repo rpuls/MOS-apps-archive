@@ -1,0 +1,21 @@
+{
+  "app": "seafile",
+  "appVersion": "13.0.21",
+  "packageVersion": "0.1.0",
+  "packageDigest": "sha256:2270b5b3cfeff1f0057f7d2ba78ae09b912907279766a99e26d2e62263d63c43",
+  "publishedAt": "2026-07-21T21:21:45+02:00",
+  "publishedFrom": {
+    "commit": "6a741118713a2db4fd0323334fe39cc0d8021197",
+    "repository": "https://github.com/rpuls/my-own-suite",
+    "url": "https://github.com/rpuls/my-own-suite/tree/6a741118713a2db4fd0323334fe39cc0d8021197/apps/seafile"
+  },
+  "catalogEntry": {
+    "minimumMosVersion": "0.1.0",
+    "packageDigest": "sha256:2270b5b3cfeff1f0057f7d2ba78ae09b912907279766a99e26d2e62263d63c43",
+    "packageVersion": "0.1.0",
+    "path": "apps/seafile",
+    "privacy": {
+      "status": "review-required"
+    }
+  }
+}

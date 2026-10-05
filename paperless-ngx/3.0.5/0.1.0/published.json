@@ -1,0 +1,22 @@
+{
+  "app": "paperless-ngx",
+  "appVersion": "3.0.5",
+  "packageVersion": "0.1.0",
+  "packageDigest": "sha256:e2e787bb2ff19abd3a6cbda2f705b189e170404b77ca7aa375a915290c0f980a",
+  "publishedAt": "2026-08-12T00:28:47+02:00",
+  "publishedFrom": {
+    "commit": "8af3c7ab11d1bd1d688e41316e7c1bc1e1a2b4ec",
+    "repository": "https://github.com/rpuls/my-own-suite",
+    "url": "https://github.com/rpuls/my-own-suite/tree/8af3c7ab11d1bd1d688e41316e7c1bc1e1a2b4ec/apps/paperless-ngx"
+  },
+  "catalogEntry": {
+    "minimumMosVersion": "0.17.0",
+    "packageDigest": "sha256:e2e787bb2ff19abd3a6cbda2f705b189e170404b77ca7aa375a915290c0f980a",
+    "packageVersion": "0.1.0",
+    "path": "apps/paperless-ngx",
+    "privacy": {
+      "posture": "private-by-default",
+      "status": "reviewed"
+    }
+  }
+}

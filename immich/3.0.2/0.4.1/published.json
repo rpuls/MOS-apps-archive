@@ -1,0 +1,22 @@
+{
+  "app": "immich",
+  "appVersion": "3.0.2",
+  "packageVersion": "0.4.1",
+  "packageDigest": "sha256:399c1d88f3a2eca40872c62091669601e2d1ceaac0c62b8b408c7478d3242771",
+  "publishedAt": "2026-08-09T00:25:41+02:00",
+  "publishedFrom": {
+    "commit": "0249ce706101a2defe4de85a0f4096a2115a6de9",
+    "repository": "https://github.com/rpuls/my-own-suite",
+    "url": "https://github.com/rpuls/my-own-suite/tree/0249ce706101a2defe4de85a0f4096a2115a6de9/apps/immich"
+  },
+  "catalogEntry": {
+    "minimumMosVersion": "0.17.0",
+    "packageDigest": "sha256:399c1d88f3a2eca40872c62091669601e2d1ceaac0c62b8b408c7478d3242771",
+    "packageVersion": "0.4.1",
+    "path": "apps/immich",
+    "privacy": {
+      "posture": "privacy-configured",
+      "status": "reviewed"
+    }
+  }
+}

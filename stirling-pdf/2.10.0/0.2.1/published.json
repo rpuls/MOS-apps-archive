@@ -1,0 +1,22 @@
+{
+  "app": "stirling-pdf",
+  "appVersion": "2.10.0",
+  "packageVersion": "0.2.1",
+  "packageDigest": "sha256:0ed168f69c482839b414bd0911c3571e5fd292f9f475bff1c0542f5968ac663b",
+  "publishedAt": "2026-07-24T23:29:59+02:00",
+  "publishedFrom": {
+    "commit": "a80fd81a04e2ebd178219eb56ba89171331bc6e7",
+    "repository": "https://github.com/rpuls/my-own-suite",
+    "url": "https://github.com/rpuls/my-own-suite/tree/a80fd81a04e2ebd178219eb56ba89171331bc6e7/apps/stirling-pdf"
+  },
+  "catalogEntry": {
+    "minimumMosVersion": "0.1.0",
+    "packageDigest": "sha256:0ed168f69c482839b414bd0911c3571e5fd292f9f475bff1c0542f5968ac663b",
+    "packageVersion": "0.2.1",
+    "path": "apps/stirling-pdf",
+    "privacy": {
+      "posture": "privacy-configured",
+      "status": "reviewed"
+    }
+  }
+}

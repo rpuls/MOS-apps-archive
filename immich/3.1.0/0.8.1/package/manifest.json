@@ -1,0 +1,272 @@
+{
+  "manifestVersion": 1,
+  "id": "immich",
+  "name": "Immich",
+  "version": "0.8.1",
+  "appVersion": "3.1.0",
+  "minimumMosVersion": "0.20.0",
+  "architectures": [
+    "amd64"
+  ],
+  "packageFiles": [
+    "immich-config.json",
+    "screenshots/timeline.png",
+    "screenshots/search.png",
+    "screenshots/map.png",
+    "screenshots/people.png",
+    "screenshots/detail.png",
+    "screenshots/albums.png",
+    "screenshots/CREDITS.md"
+  ],
+  "summary": "Every photo and video you own, backed up off your phone and searchable, on your own server.",
+  "category": "media",
+  "icon": "icon.png",
+  "catalog": {
+    "description": "Immich is the photo app you already know how to use, running on a machine you own. It empties your phone in the background at full resolution and hands back everything that made a cloud photo service worth putting up with: a timeline you scroll by year, a map of everywhere you have been, faces it learns and groups on its own, and a search box that finds the red bike in the rain in a library you never tagged. The machine learning that does all of that runs on your server too, so nothing about your family album is read anywhere else - and nothing gets compressed, hidden behind a storage tier or deleted because a subscription lapsed.",
+    "demoDeployTargets": [
+      {
+        "provider": "railway",
+        "label": "Railway",
+        "url": "https://railway.com/deploy/immich-1?referralCode=-Yg50p"
+      }
+    ],
+    "replaces": [
+      "Google Photos",
+      "iCloud Photos",
+      "Amazon Photos",
+      "Flickr",
+      "SmugMug",
+      "Synology Photos",
+      "Ente Photos",
+      "QNAP QuMagie"
+    ],
+    "screenshots": [
+      {
+        "src": "screenshots/timeline.png",
+        "alt": "The Immich timeline showing a day from a trip to Krakow as a dense grid of photos, with a year scrubber down the right edge",
+        "caption": "Every photo you own, in one scroll back through the years"
+      },
+      {
+        "src": "screenshots/search.png",
+        "alt": "Immich search results for the phrase 'a dog in the garden', showing photos of a beagle outdoors that were never tagged",
+        "caption": "Describe what you remember and it finds the photo"
+      },
+      {
+        "src": "screenshots/map.png",
+        "alt": "The Immich map of Europe with photo clusters over England, Denmark, the Netherlands, Poland, the Alps and Spain",
+        "caption": "Everywhere you have been, read from the photos themselves"
+      },
+      {
+        "src": "screenshots/people.png",
+        "alt": "The Immich people page showing three named faces the server grouped on its own",
+        "caption": "Faces grouped without being asked, named once"
+      },
+      {
+        "src": "screenshots/detail.png",
+        "alt": "A photo open in Immich with the info panel showing the people in it, the date, the filename, the camera, the exposure and the place it was taken",
+        "caption": "The original file, and everything it knows about itself"
+      },
+      {
+        "src": "screenshots/albums.png",
+        "alt": "The Immich albums page grouped by year, each album showing a cover photo, its date range and how many items it holds",
+        "caption": "Trips and years, filed the way you would file them"
+      }
+    ],
+    "tags": [
+      "photos",
+      "videos",
+      "backup",
+      "gallery",
+      "timeline",
+      "map",
+      "memories",
+      "facial-recognition",
+      "smart-search",
+      "raw",
+      "google-photos-alternative",
+      "icloud-photos-alternative"
+    ],
+    "features": [
+      {
+        "title": "Your phone empties itself",
+        "body": "The Immich app uploads new photos and videos in the background, at the resolution your camera actually shot them - RAW files, Live Photos and 4K video included. Nothing is re-encoded on the way in, so the file sitting on your server is the file your camera wrote."
+      },
+      {
+        "title": "Find it without ever having tagged it",
+        "body": "Describe what you remember - a red bike in the rain, the cake with the sparklers - and Immich finds the photo. It reads text inside pictures too, so the screenshot of a boarding pass turns up when you search the flight number printed on it."
+      },
+      {
+        "title": "The people and places come back to you",
+        "body": "Faces are grouped on their own and you name each person once. A world map pins every photo that recorded where it was taken, and each morning Immich shows you the same week from the years before."
+      },
+      {
+        "title": "Share an album, not your library",
+        "body": "Send an album to people who have no account and no app, or give a partner a standing view of your photos inside their own timeline. Both are links served off your server rather than a copy uploaded to somebody else's."
+      },
+      {
+        "title": "The clever part runs on your hardware",
+        "body": "Face recognition, natural-language search and text reading happen in a container beside the photos. The models are downloaded once, and after that your library never leaves the server in order to be understood."
+      }
+    ],
+    "resourceHint": {
+      "level": "high",
+      "label": "High resources",
+      "description": "This package requires minimum 4GB RAM and CPU with AVX2 support for optimal machine learning performance. Photo and video libraries grow large, and whole-suite backups include the full library - size your backup drive for the library you plan to store and expect backups to take longer as it grows."
+    },
+    "privacy": {
+      "summary": "Your photos are stored and processed on your own server. MOS disables Immich's version check and keeps the map, one of the features that makes Immich what it is. We assessed the map's outside dependency in detail and consider it privacy respecting: it never learns where your photos were taken.",
+      "notes": [
+        "Photo and video library data is stored in package-owned volumes, and machine learning inference runs locally on your server. Turning photo GPS into place names also happens locally, from a 54 MB dataset shipped inside the image.",
+        "Only the Immich web service is exposed through HTTPS; the database, cache, and machine learning services remain internal.",
+        "MOS disables the enabled-by-default new-version check, so the server makes no scheduled release-check requests to version.immich.cloud.",
+        "MOS keeps the map switched on, and that outside dependency is why this app is marked External dependency. Opening the map asks Immich's tile service for plain map imagery, requested by grid square from tiles.immich.cloud and static.immich.cloud, both served via Cloudflare. Your photo locations never leave your server: the markers you see are drawn in your browser from your own server's data. What the tile service can tell is which square of the world map you are looking at, and the smallest square it serves spans about 1.2 km — a neighbourhood, not an address, and never a photo. Immich's privacy policy says it logs the requested tile, your IP address and timing. Requests happen only while the map is open and carry no cookie or account identity.",
+        "Machine learning models are downloaded on first use, from Hugging Face for smart search and face recognition and from Alibaba Cloud's ModelScope for text recognition. The downloads are unauthenticated, and your photos are never sent out for processing."
+      ]
+    },
+    "links": {
+      "website": "https://immich.app/",
+      "docs": "https://immich.app/docs/",
+      "repository": "https://github.com/immich-app/immich"
+    }
+  },
+  "setup": {
+    "fields": [
+      {
+        "id": "postgresPassword",
+        "type": "password",
+        "label": "PostgreSQL password",
+        "required": true,
+        "secret": true,
+        "redactedLabel": "Generated Immich PostgreSQL password",
+        "generated": {
+          "kind": "random",
+          "bytes": 32,
+          "encoding": "base64url"
+        }
+      },
+      {
+        "id": "jwtSecret",
+        "type": "password",
+        "label": "Immich JWT secret",
+        "required": true,
+        "secret": true,
+        "redactedLabel": "Generated Immich JWT secret",
+        "generated": {
+          "kind": "random",
+          "bytes": 64,
+          "encoding": "base64url"
+        }
+      }
+    ]
+  },
+  "resources": {
+    "services": {
+      "immich-postgres": {
+        "dockerfile": "Dockerfile.postgres",
+        "internalPort": 5432,
+        "env": {
+          "POSTGRES_USER": "immich",
+          "POSTGRES_PASSWORD": "${secret.postgresPassword}",
+          "POSTGRES_DB": "immich",
+          "POSTGRES_INITDB_ARGS": "--data-checksums"
+        },
+        "volumes": [
+          "postgres-data:/var/lib/postgresql/data"
+        ]
+      },
+      "immich-valkey": {
+        "dockerfile": "Dockerfile.valkey",
+        "internalPort": 6379
+      },
+      "immich-machine-learning": {
+        "dockerfile": "Dockerfile.machine-learning",
+        "internalPort": 3003,
+        "volumes": [
+          "model-cache:/cache"
+        ]
+      },
+      "immich-server": {
+        "dockerfile": "Dockerfile",
+        "internalPort": 2283,
+        "env": {
+          "DB_HOSTNAME": "immich-postgres",
+          "DB_PORT": "5432",
+          "DB_USERNAME": "immich",
+          "DB_PASSWORD": "${secret.postgresPassword}",
+          "DB_DATABASE_NAME": "immich",
+          "REDIS_HOSTNAME": "immich-valkey",
+          "REDIS_PORT": "6379",
+          "JWT_SECRET": "${secret.jwtSecret}",
+          "MACHINE_LEARNING_HOST": "immich-machine-learning",
+          "MACHINE_LEARNING_PORT": "3003",
+          "IMMICH_SERVER_URL": "http://immich-server:2283",
+          "IMMICH_WEB_URL": "http://immich-server:2283",
+          "PUBLIC_HOSTNAME": "${app.host}",
+          "PUBLIC_PORT": "443",
+          "PUBLIC_PROTOCOL": "${app.scheme}",
+          "TZ": "UTC",
+          "DISABLE_MACHINE_LEARNING": "false",
+          "IMMICH_CONFIG_FILE": "/etc/immich/immich-config.json",
+          "MOS_SMTP_HOST": "${smtp.host}",
+          "MOS_SMTP_PORT": "${smtp.port}",
+          "MOS_SMTP_USERNAME": "${smtp.username}",
+          "MOS_SMTP_PASSWORD": "${smtp.password}",
+          "MOS_SMTP_FROM": "${smtp.fromAddress}",
+          "MOS_SMTP_FROM_NAME": "${smtp.fromName}",
+          "MOS_SMTP_IMPLICIT_TLS": "${smtp.implicitTls}",
+          "MOS_SMTP_ALLOW_INVALID_CERT": "${smtp.allowInvalidCert}"
+        },
+        "volumes": [
+          "library:/usr/src/app/upload",
+          "cache:/usr/src/app/cache"
+        ]
+      }
+    }
+  },
+  "routes": [
+    {
+      "host": "immich",
+      "service": "immich-server"
+    }
+  ],
+  "homepage": {
+    "group": "Media",
+    "name": "Immich",
+    "description": "Self-hosted photo and video backup.",
+    "icon": "immich"
+  },
+  "health": {
+    "type": "http",
+    "url": "http://immich-server:2283/api/server/ping"
+  },
+  "onboarding": {
+    "title": "Set up Immich",
+    "summary": "Create your admin account, then connect the mobile app for automatic photo backup.",
+    "sections": [
+      {
+        "id": "first-run",
+        "type": "note",
+        "title": "First run setup",
+        "body": "Immich will automatically prepare the database on first startup. This may take several minutes."
+      },
+      {
+        "id": "admin-account",
+        "type": "steps",
+        "title": "Create admin account",
+        "body": "After Immich finishes starting, open the application and create your first admin user account directly in the Immich web interface."
+      },
+      {
+        "id": "backup-reminder",
+        "type": "warning",
+        "title": "Backup important",
+        "body": "Your photo library is stored in the Immich package volume. Ensure you run regular MOS backups before uploading large amounts of data."
+      },
+      {
+        "id": "mobile-app",
+        "type": "steps",
+        "title": "Install mobile app",
+        "body": "Download the official Immich mobile app from App Store or Google Play to enable automatic photo backup from your device."
+      }
+    ]
+  }
+}

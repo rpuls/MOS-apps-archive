@@ -1,0 +1,22 @@
+{
+  "app": "radicale",
+  "appVersion": "3.7.6",
+  "packageVersion": "0.4.3",
+  "packageDigest": "sha256:1a6c65be9b93f560ba66517243bcd40af449e30fa308dd11b4d714744f003652",
+  "publishedAt": "2026-08-17T23:55:14+02:00",
+  "publishedFrom": {
+    "commit": "d324f38ed376faa79ed7c7ff5b46c0e224e9f028",
+    "repository": "https://github.com/rpuls/my-own-suite",
+    "url": "https://github.com/rpuls/my-own-suite/tree/d324f38ed376faa79ed7c7ff5b46c0e224e9f028/apps/radicale"
+  },
+  "catalogEntry": {
+    "minimumMosVersion": "0.18.0",
+    "packageDigest": "sha256:1a6c65be9b93f560ba66517243bcd40af449e30fa308dd11b4d714744f003652",
+    "packageVersion": "0.4.3",
+    "path": "apps/radicale",
+    "privacy": {
+      "posture": "private-by-default",
+      "status": "reviewed"
+    }
+  }
+}
