@@ -1,0 +1,43 @@
+{
+  "attachments": [
+    {
+      "name": "screenshot",
+      "path": "test/e2e/results/20261006-172152-update-vaultwarden/playwright/path--update-vaultwarden/test-failed-1.png"
+    },
+    {
+      "name": "video",
+      "path": "test/e2e/results/20261006-172152-update-vaultwarden/playwright/path--update-vaultwarden/video.webm"
+    },
+    {
+      "name": "error-context",
+      "path": "test/e2e/results/20261006-172152-update-vaultwarden/playwright/path--update-vaultwarden/error-context.md"
+    },
+    {
+      "name": "trace",
+      "path": "test/e2e/results/20261006-172152-update-vaultwarden/playwright/path--update-vaultwarden/trace.zip"
+    }
+  ],
+  "durationMs": 17567,
+  "error": "Error: dns01 needs MOS_E2E_DNS01_BASE_DOMAIN and CLOUDFLARE_API_TOKEN in test/e2e/.env.",
+  "status": "failed",
+  "steps": [
+    {
+      "durationMs": 9183,
+      "error": null,
+      "status": "passed",
+      "title": "reset"
+    },
+    {
+      "durationMs": 3805,
+      "error": null,
+      "status": "passed",
+      "title": "owner"
+    },
+    {
+      "durationMs": 1,
+      "error": "Error: dns01 needs MOS_E2E_DNS01_BASE_DOMAIN and CLOUDFLARE_API_TOKEN in test/e2e/.env.",
+      "status": "failed",
+      "title": "dns01"
+    }
+  ]
+}
