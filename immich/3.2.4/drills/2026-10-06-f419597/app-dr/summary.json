@@ -1,0 +1,80 @@
+{
+  "attachments": [],
+  "durationMs": 1316847,
+  "error": null,
+  "status": "passed",
+  "steps": [
+    {
+      "durationMs": 9175,
+      "error": null,
+      "status": "passed",
+      "title": "reset"
+    },
+    {
+      "durationMs": 2849,
+      "error": null,
+      "status": "passed",
+      "title": "owner"
+    },
+    {
+      "durationMs": 28083,
+      "error": null,
+      "status": "passed",
+      "title": "install:immich"
+    },
+    {
+      "durationMs": 32817,
+      "error": null,
+      "status": "passed",
+      "title": "app:immich"
+    },
+    {
+      "durationMs": 84527,
+      "error": null,
+      "status": "passed",
+      "title": "backup:bucket"
+    },
+    {
+      "durationMs": 6089,
+      "error": null,
+      "status": "passed",
+      "title": "reset"
+    },
+    {
+      "durationMs": 3377,
+      "error": null,
+      "status": "passed",
+      "title": "owner"
+    },
+    {
+      "durationMs": 1090505,
+      "error": null,
+      "status": "passed",
+      "title": "restore:bucket"
+    },
+    {
+      "durationMs": 9681,
+      "error": null,
+      "status": "passed",
+      "title": "verify:immich"
+    },
+    {
+      "durationMs": 645,
+      "error": null,
+      "status": "passed",
+      "title": "routes"
+    },
+    {
+      "durationMs": 270,
+      "error": null,
+      "status": "passed",
+      "title": "network"
+    },
+    {
+      "durationMs": 21090,
+      "error": null,
+      "status": "passed",
+      "title": "cleanup"
+    }
+  ]
+}

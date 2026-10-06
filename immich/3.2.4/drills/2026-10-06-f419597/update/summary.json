@@ -1,0 +1,68 @@
+{
+  "attachments": [],
+  "durationMs": 378850,
+  "error": null,
+  "status": "passed",
+  "steps": [
+    {
+      "durationMs": 9295,
+      "error": null,
+      "status": "passed",
+      "title": "reset"
+    },
+    {
+      "durationMs": 5502,
+      "error": null,
+      "status": "passed",
+      "title": "owner"
+    },
+    {
+      "durationMs": 142062,
+      "error": null,
+      "status": "passed",
+      "title": "install:immich"
+    },
+    {
+      "durationMs": 46414,
+      "error": null,
+      "status": "passed",
+      "title": "app:immich"
+    },
+    {
+      "durationMs": 48263,
+      "error": null,
+      "status": "passed",
+      "title": "platform-update:wait"
+    },
+    {
+      "durationMs": 107615,
+      "error": null,
+      "status": "passed",
+      "title": "update:immich"
+    },
+    {
+      "durationMs": 9748,
+      "error": null,
+      "status": "passed",
+      "title": "verify:immich"
+    },
+    {
+      "durationMs": 816,
+      "error": null,
+      "status": "passed",
+      "title": "routes"
+    },
+    {
+      "durationMs": 2574,
+      "error": null,
+      "status": "passed",
+      "title": "compare"
+    },
+    {
+      "durationMs": 181,
+      "error": null,
+      "status": "passed",
+      "title": "network"
+    }
+  ]
+}
