@@ -2,39 +2,39 @@
   "attachments": [
     {
       "name": "screenshot",
-      "path": "test/e2e/results/20261006-191730-update-paperless-ngx/playwright/path--update-paperless-ngx/test-failed-1.png"
+      "path": "test/e2e/results/20261006-200500-update-paperless-ngx/playwright/path--update-paperless-ngx/test-failed-1.png"
     },
     {
       "name": "video",
-      "path": "test/e2e/results/20261006-191730-update-paperless-ngx/playwright/path--update-paperless-ngx/video.webm"
+      "path": "test/e2e/results/20261006-200500-update-paperless-ngx/playwright/path--update-paperless-ngx/video.webm"
     },
     {
       "name": "error-context",
-      "path": "test/e2e/results/20261006-191730-update-paperless-ngx/playwright/path--update-paperless-ngx/error-context.md"
+      "path": "test/e2e/results/20261006-200500-update-paperless-ngx/playwright/path--update-paperless-ngx/error-context.md"
     },
     {
       "name": "trace",
-      "path": "test/e2e/results/20261006-191730-update-paperless-ngx/playwright/path--update-paperless-ngx/trace.zip"
+      "path": "test/e2e/results/20261006-200500-update-paperless-ngx/playwright/path--update-paperless-ngx/trace.zip"
     }
   ],
-  "durationMs": 195642,
+  "durationMs": 184413,
   "error": "Error: paperless-ngx install failed at runtime: The app container started but did not become healthy in time.",
   "status": "failed",
   "steps": [
     {
-      "durationMs": 6236,
+      "durationMs": 6177,
       "error": null,
       "status": "passed",
       "title": "reset"
     },
     {
-      "durationMs": 4337,
+      "durationMs": 2849,
       "error": null,
       "status": "passed",
       "title": "owner"
     },
     {
-      "durationMs": 171549,
+      "durationMs": 162376,
       "error": "Error: paperless-ngx install failed at runtime: The app container started but did not become healthy in time.",
       "status": "failed",
       "title": "install:paperless-ngx"
