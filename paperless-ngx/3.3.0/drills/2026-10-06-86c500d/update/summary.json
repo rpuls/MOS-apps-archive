@@ -1,0 +1,68 @@
+{
+  "attachments": [],
+  "durationMs": 383017,
+  "error": null,
+  "status": "passed",
+  "steps": [
+    {
+      "durationMs": 6130,
+      "error": null,
+      "status": "passed",
+      "title": "reset"
+    },
+    {
+      "durationMs": 2787,
+      "error": null,
+      "status": "passed",
+      "title": "owner"
+    },
+    {
+      "durationMs": 162748,
+      "error": null,
+      "status": "passed",
+      "title": "install:paperless-ngx"
+    },
+    {
+      "durationMs": 13727,
+      "error": null,
+      "status": "passed",
+      "title": "app:paperless-ngx"
+    },
+    {
+      "durationMs": 37069,
+      "error": null,
+      "status": "passed",
+      "title": "platform-update:wait"
+    },
+    {
+      "durationMs": 147058,
+      "error": null,
+      "status": "passed",
+      "title": "update:paperless-ngx"
+    },
+    {
+      "durationMs": 6898,
+      "error": null,
+      "status": "passed",
+      "title": "verify:paperless-ngx"
+    },
+    {
+      "durationMs": 479,
+      "error": null,
+      "status": "passed",
+      "title": "routes"
+    },
+    {
+      "durationMs": 1799,
+      "error": null,
+      "status": "passed",
+      "title": "compare"
+    },
+    {
+      "durationMs": 16,
+      "error": null,
+      "status": "passed",
+      "title": "network"
+    }
+  ]
+}

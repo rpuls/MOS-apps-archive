@@ -1,0 +1,80 @@
+{
+  "attachments": [],
+  "durationMs": 475202,
+  "error": null,
+  "status": "passed",
+  "steps": [
+    {
+      "durationMs": 6107,
+      "error": null,
+      "status": "passed",
+      "title": "reset"
+    },
+    {
+      "durationMs": 2748,
+      "error": null,
+      "status": "passed",
+      "title": "owner"
+    },
+    {
+      "durationMs": 95020,
+      "error": null,
+      "status": "passed",
+      "title": "install:paperless-ngx"
+    },
+    {
+      "durationMs": 12323,
+      "error": null,
+      "status": "passed",
+      "title": "app:paperless-ngx"
+    },
+    {
+      "durationMs": 62126,
+      "error": null,
+      "status": "passed",
+      "title": "backup:bucket"
+    },
+    {
+      "durationMs": 6101,
+      "error": null,
+      "status": "passed",
+      "title": "reset"
+    },
+    {
+      "durationMs": 2780,
+      "error": null,
+      "status": "passed",
+      "title": "owner"
+    },
+    {
+      "durationMs": 253631,
+      "error": null,
+      "status": "passed",
+      "title": "restore:bucket"
+    },
+    {
+      "durationMs": 8211,
+      "error": null,
+      "status": "passed",
+      "title": "verify:paperless-ngx"
+    },
+    {
+      "durationMs": 564,
+      "error": null,
+      "status": "passed",
+      "title": "routes"
+    },
+    {
+      "durationMs": 44,
+      "error": null,
+      "status": "passed",
+      "title": "network"
+    },
+    {
+      "durationMs": 21825,
+      "error": null,
+      "status": "passed",
+      "title": "cleanup"
+    }
+  ]
+}

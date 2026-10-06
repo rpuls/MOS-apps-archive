@@ -1,0 +1,49 @@
+{
+  "app": "paperless-ngx",
+  "candidate": "86c500d0f307897251a47a5f08c86a5aacffabba",
+  "pullRequest": {
+    "number": 318,
+    "url": "https://github.com/rpuls/my-own-suite/pull/318"
+  },
+  "ranAt": "2026-10-06T21:57:10.559Z",
+  "runs": [
+    {
+      "failedStep": null,
+      "path": "@update paperless-ngx",
+      "status": "passed",
+      "steps": [
+        "✓ reset",
+        "✓ owner",
+        "✓ install:paperless-ngx",
+        "✓ app:paperless-ngx",
+        "✓ platform-update:wait",
+        "✓ update:paperless-ngx",
+        "✓ verify:paperless-ngx",
+        "✓ routes",
+        "✓ compare",
+        "✓ network"
+      ]
+    },
+    {
+      "failedStep": null,
+      "path": "@app-dr paperless-ngx",
+      "status": "passed",
+      "steps": [
+        "✓ reset",
+        "✓ owner",
+        "✓ install:paperless-ngx",
+        "✓ app:paperless-ngx",
+        "✓ backup:bucket",
+        "✓ reset",
+        "✓ owner",
+        "✓ restore:bucket",
+        "✓ verify:paperless-ngx",
+        "✓ routes",
+        "✓ network",
+        "✓ cleanup"
+      ]
+    }
+  ],
+  "status": "passed",
+  "summary": "`@update paperless-ngx` passed, `@app-dr paperless-ngx` passed"
+}
