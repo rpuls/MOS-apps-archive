@@ -1,0 +1,74 @@
+{
+  "attachments": [],
+  "durationMs": 208372,
+  "error": null,
+  "status": "passed",
+  "steps": [
+    {
+      "durationMs": 6219,
+      "error": null,
+      "status": "passed",
+      "title": "reset"
+    },
+    {
+      "durationMs": 3831,
+      "error": null,
+      "status": "passed",
+      "title": "owner"
+    },
+    {
+      "durationMs": 20042,
+      "error": null,
+      "status": "passed",
+      "title": "dns01"
+    },
+    {
+      "durationMs": 16680,
+      "error": null,
+      "status": "passed",
+      "title": "install:vaultwarden"
+    },
+    {
+      "durationMs": 21376,
+      "error": null,
+      "status": "passed",
+      "title": "app:vaultwarden"
+    },
+    {
+      "durationMs": 50370,
+      "error": null,
+      "status": "passed",
+      "title": "platform-update:wait"
+    },
+    {
+      "durationMs": 64194,
+      "error": null,
+      "status": "passed",
+      "title": "update:vaultwarden"
+    },
+    {
+      "durationMs": 16565,
+      "error": null,
+      "status": "passed",
+      "title": "verify:vaultwarden"
+    },
+    {
+      "durationMs": 875,
+      "error": null,
+      "status": "passed",
+      "title": "routes"
+    },
+    {
+      "durationMs": 1802,
+      "error": null,
+      "status": "passed",
+      "title": "compare"
+    },
+    {
+      "durationMs": 39,
+      "error": null,
+      "status": "passed",
+      "title": "network"
+    }
+  ]
+}
