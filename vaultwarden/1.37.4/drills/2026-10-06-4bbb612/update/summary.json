@@ -1,0 +1,67 @@
+{
+  "attachments": [
+    {
+      "name": "screenshot",
+      "path": "test/e2e/results/20261006-175856-update-vaultwarden/playwright/path--update-vaultwarden/test-failed-1.png"
+    },
+    {
+      "name": "video",
+      "path": "test/e2e/results/20261006-175856-update-vaultwarden/playwright/path--update-vaultwarden/video.webm"
+    },
+    {
+      "name": "error-context",
+      "path": "test/e2e/results/20261006-175856-update-vaultwarden/playwright/path--update-vaultwarden/error-context.md"
+    },
+    {
+      "name": "trace",
+      "path": "test/e2e/results/20261006-175856-update-vaultwarden/playwright/path--update-vaultwarden/trace.zip"
+    }
+  ],
+  "durationMs": 143343,
+  "error": "Error: vaultwarden is offered no update (catalog status not-in-catalog, installed 0.4.1).",
+  "status": "failed",
+  "steps": [
+    {
+      "durationMs": 6144,
+      "error": null,
+      "status": "passed",
+      "title": "reset"
+    },
+    {
+      "durationMs": 4674,
+      "error": null,
+      "status": "passed",
+      "title": "owner"
+    },
+    {
+      "durationMs": 26187,
+      "error": null,
+      "status": "passed",
+      "title": "dns01"
+    },
+    {
+      "durationMs": 18576,
+      "error": null,
+      "status": "passed",
+      "title": "install:vaultwarden"
+    },
+    {
+      "durationMs": 28692,
+      "error": null,
+      "status": "passed",
+      "title": "app:vaultwarden"
+    },
+    {
+      "durationMs": 46557,
+      "error": null,
+      "status": "passed",
+      "title": "platform-update:wait"
+    },
+    {
+      "durationMs": 1495,
+      "error": "Error: vaultwarden is offered no update (catalog status not-in-catalog, installed 0.4.1).",
+      "status": "failed",
+      "title": "update:vaultwarden"
+    }
+  ]
+}

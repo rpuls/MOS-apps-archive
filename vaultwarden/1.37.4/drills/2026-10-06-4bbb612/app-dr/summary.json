@@ -1,0 +1,92 @@
+{
+  "attachments": [],
+  "durationMs": 264089,
+  "error": null,
+  "status": "passed",
+  "steps": [
+    {
+      "durationMs": 3187,
+      "error": null,
+      "status": "passed",
+      "title": "reset"
+    },
+    {
+      "durationMs": 3519,
+      "error": null,
+      "status": "passed",
+      "title": "owner"
+    },
+    {
+      "durationMs": 10574,
+      "error": null,
+      "status": "passed",
+      "title": "dns01"
+    },
+    {
+      "durationMs": 15186,
+      "error": null,
+      "status": "passed",
+      "title": "install:vaultwarden"
+    },
+    {
+      "durationMs": 15809,
+      "error": null,
+      "status": "passed",
+      "title": "app:vaultwarden"
+    },
+    {
+      "durationMs": 37052,
+      "error": null,
+      "status": "passed",
+      "title": "backup:bucket"
+    },
+    {
+      "durationMs": 6111,
+      "error": null,
+      "status": "passed",
+      "title": "reset"
+    },
+    {
+      "durationMs": 4285,
+      "error": null,
+      "status": "passed",
+      "title": "owner"
+    },
+    {
+      "durationMs": 113170,
+      "error": null,
+      "status": "passed",
+      "title": "restore:bucket"
+    },
+    {
+      "durationMs": 10947,
+      "error": null,
+      "status": "passed",
+      "title": "dns01"
+    },
+    {
+      "durationMs": 16711,
+      "error": null,
+      "status": "passed",
+      "title": "verify:vaultwarden"
+    },
+    {
+      "durationMs": 889,
+      "error": null,
+      "status": "passed",
+      "title": "routes"
+    },
+    {
+      "durationMs": 17,
+      "error": null,
+      "status": "passed",
+      "title": "network"
+    },
+    {
+      "durationMs": 21926,
+      "error": null,
+      "status": "passed",
+      "title": "cleanup"
+    }
+  ]
+}
