@@ -1,0 +1,68 @@
+{
+  "attachments": [],
+  "durationMs": 91890,
+  "error": null,
+  "status": "passed",
+  "steps": [
+    {
+      "durationMs": 6168,
+      "error": null,
+      "status": "passed",
+      "title": "reset"
+    },
+    {
+      "durationMs": 3473,
+      "error": null,
+      "status": "passed",
+      "title": "owner"
+    },
+    {
+      "durationMs": 15256,
+      "error": null,
+      "status": "passed",
+      "title": "install:radicale"
+    },
+    {
+      "durationMs": 13494,
+      "error": null,
+      "status": "passed",
+      "title": "app:radicale"
+    },
+    {
+      "durationMs": 23268,
+      "error": null,
+      "status": "passed",
+      "title": "platform-update:wait"
+    },
+    {
+      "durationMs": 14918,
+      "error": null,
+      "status": "passed",
+      "title": "update:radicale"
+    },
+    {
+      "durationMs": 7892,
+      "error": null,
+      "status": "passed",
+      "title": "verify:radicale"
+    },
+    {
+      "durationMs": 672,
+      "error": null,
+      "status": "passed",
+      "title": "routes"
+    },
+    {
+      "durationMs": 1134,
+      "error": null,
+      "status": "passed",
+      "title": "compare"
+    },
+    {
+      "durationMs": 21,
+      "error": null,
+      "status": "passed",
+      "title": "network"
+    }
+  ]
+}

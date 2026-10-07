@@ -1,0 +1,49 @@
+{
+  "app": "radicale",
+  "candidate": "4679d6985802c64279f3de1440bdca837041fcfc",
+  "pullRequest": {
+    "number": 321,
+    "url": "https://github.com/rpuls/my-own-suite/pull/321"
+  },
+  "ranAt": "2026-10-07T20:41:38.635Z",
+  "runs": [
+    {
+      "failedStep": null,
+      "path": "@update radicale",
+      "status": "passed",
+      "steps": [
+        "✓ reset",
+        "✓ owner",
+        "✓ install:radicale",
+        "✓ app:radicale",
+        "✓ platform-update:wait",
+        "✓ update:radicale",
+        "✓ verify:radicale",
+        "✓ routes",
+        "✓ compare",
+        "✓ network"
+      ]
+    },
+    {
+      "failedStep": null,
+      "path": "@app-dr radicale",
+      "status": "passed",
+      "steps": [
+        "✓ reset",
+        "✓ owner",
+        "✓ install:radicale",
+        "✓ app:radicale",
+        "✓ backup:bucket",
+        "✓ reset",
+        "✓ owner",
+        "✓ restore:bucket",
+        "✓ verify:radicale",
+        "✓ routes",
+        "✓ network",
+        "✓ cleanup"
+      ]
+    }
+  ],
+  "status": "passed",
+  "summary": "`@update radicale` passed, `@app-dr radicale` passed"
+}

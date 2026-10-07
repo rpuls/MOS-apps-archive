@@ -1,0 +1,80 @@
+{
+  "attachments": [],
+  "durationMs": 191200,
+  "error": null,
+  "status": "passed",
+  "steps": [
+    {
+      "durationMs": 6141,
+      "error": null,
+      "status": "passed",
+      "title": "reset"
+    },
+    {
+      "durationMs": 3308,
+      "error": null,
+      "status": "passed",
+      "title": "owner"
+    },
+    {
+      "durationMs": 6113,
+      "error": null,
+      "status": "passed",
+      "title": "install:radicale"
+    },
+    {
+      "durationMs": 17577,
+      "error": null,
+      "status": "passed",
+      "title": "app:radicale"
+    },
+    {
+      "durationMs": 26860,
+      "error": null,
+      "status": "passed",
+      "title": "backup:bucket"
+    },
+    {
+      "durationMs": 6082,
+      "error": null,
+      "status": "passed",
+      "title": "reset"
+    },
+    {
+      "durationMs": 3674,
+      "error": null,
+      "status": "passed",
+      "title": "owner"
+    },
+    {
+      "durationMs": 98311,
+      "error": null,
+      "status": "passed",
+      "title": "restore:bucket"
+    },
+    {
+      "durationMs": 8209,
+      "error": null,
+      "status": "passed",
+      "title": "verify:radicale"
+    },
+    {
+      "durationMs": 623,
+      "error": null,
+      "status": "passed",
+      "title": "routes"
+    },
+    {
+      "durationMs": 18,
+      "error": null,
+      "status": "passed",
+      "title": "network"
+    },
+    {
+      "durationMs": 10539,
+      "error": null,
+      "status": "passed",
+      "title": "cleanup"
+    }
+  ]
+}
