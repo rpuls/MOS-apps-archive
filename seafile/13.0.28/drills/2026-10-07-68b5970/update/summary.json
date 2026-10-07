@@ -1,0 +1,68 @@
+{
+  "attachments": [],
+  "durationMs": 259418,
+  "error": null,
+  "status": "passed",
+  "steps": [
+    {
+      "durationMs": 6173,
+      "error": null,
+      "status": "passed",
+      "title": "reset"
+    },
+    {
+      "durationMs": 4390,
+      "error": null,
+      "status": "passed",
+      "title": "owner"
+    },
+    {
+      "durationMs": 100051,
+      "error": null,
+      "status": "passed",
+      "title": "install:seafile"
+    },
+    {
+      "durationMs": 18751,
+      "error": null,
+      "status": "passed",
+      "title": "app:seafile"
+    },
+    {
+      "durationMs": 41244,
+      "error": null,
+      "status": "passed",
+      "title": "platform-update:wait"
+    },
+    {
+      "durationMs": 62601,
+      "error": null,
+      "status": "passed",
+      "title": "update:seafile"
+    },
+    {
+      "durationMs": 19231,
+      "error": null,
+      "status": "passed",
+      "title": "verify:seafile"
+    },
+    {
+      "durationMs": 625,
+      "error": null,
+      "status": "passed",
+      "title": "routes"
+    },
+    {
+      "durationMs": 1733,
+      "error": null,
+      "status": "passed",
+      "title": "compare"
+    },
+    {
+      "durationMs": 24,
+      "error": null,
+      "status": "passed",
+      "title": "network"
+    }
+  ]
+}

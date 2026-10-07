@@ -1,0 +1,49 @@
+{
+  "app": "seafile",
+  "candidate": "68b597071538c87a6b316d0046e513719fe452e5",
+  "pullRequest": {
+    "number": 320,
+    "url": "https://github.com/rpuls/my-own-suite/pull/320"
+  },
+  "ranAt": "2026-10-07T20:20:15.985Z",
+  "runs": [
+    {
+      "failedStep": null,
+      "path": "@update seafile",
+      "status": "passed",
+      "steps": [
+        "✓ reset",
+        "✓ owner",
+        "✓ install:seafile",
+        "✓ app:seafile",
+        "✓ platform-update:wait",
+        "✓ update:seafile",
+        "✓ verify:seafile",
+        "✓ routes",
+        "✓ compare",
+        "✓ network"
+      ]
+    },
+    {
+      "failedStep": null,
+      "path": "@app-dr seafile",
+      "status": "passed",
+      "steps": [
+        "✓ reset",
+        "✓ owner",
+        "✓ install:seafile",
+        "✓ app:seafile",
+        "✓ backup:bucket",
+        "✓ reset",
+        "✓ owner",
+        "✓ restore:bucket",
+        "✓ verify:seafile",
+        "✓ routes",
+        "✓ network",
+        "✓ cleanup"
+      ]
+    }
+  ],
+  "status": "passed",
+  "summary": "`@update seafile` passed, `@app-dr seafile` passed"
+}

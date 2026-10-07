@@ -1,0 +1,80 @@
+{
+  "attachments": [],
+  "durationMs": 404639,
+  "error": null,
+  "status": "passed",
+  "steps": [
+    {
+      "durationMs": 6164,
+      "error": null,
+      "status": "passed",
+      "title": "reset"
+    },
+    {
+      "durationMs": 3762,
+      "error": null,
+      "status": "passed",
+      "title": "owner"
+    },
+    {
+      "durationMs": 45701,
+      "error": null,
+      "status": "passed",
+      "title": "install:seafile"
+    },
+    {
+      "durationMs": 14819,
+      "error": null,
+      "status": "passed",
+      "title": "app:seafile"
+    },
+    {
+      "durationMs": 31721,
+      "error": null,
+      "status": "passed",
+      "title": "backup:bucket"
+    },
+    {
+      "durationMs": 6094,
+      "error": null,
+      "status": "passed",
+      "title": "reset"
+    },
+    {
+      "durationMs": 3804,
+      "error": null,
+      "status": "passed",
+      "title": "owner"
+    },
+    {
+      "durationMs": 252056,
+      "error": null,
+      "status": "passed",
+      "title": "restore:bucket"
+    },
+    {
+      "durationMs": 21141,
+      "error": null,
+      "status": "passed",
+      "title": "verify:seafile"
+    },
+    {
+      "durationMs": 1361,
+      "error": null,
+      "status": "passed",
+      "title": "routes"
+    },
+    {
+      "durationMs": 15,
+      "error": null,
+      "status": "passed",
+      "title": "network"
+    },
+    {
+      "durationMs": 13985,
+      "error": null,
+      "status": "passed",
+      "title": "cleanup"
+    }
+  ]
+}
