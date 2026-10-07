@@ -1,0 +1,57 @@
+{
+  "app": "seafile",
+  "candidate": "810b3f6805aa7ddfc69fe9c7c4fe173f2b4e8aa6",
+  "pullRequest": {
+    "number": 320,
+    "url": "https://github.com/rpuls/my-own-suite/pull/320"
+  },
+  "ranAt": "2026-10-07T22:53:22.602Z",
+  "runs": [
+    {
+      "failedStep": null,
+      "path": "@update seafile",
+      "status": "passed",
+      "steps": [
+        "✓ reset",
+        "✓ owner",
+        "✓ install:onlyoffice",
+        "✓ install:seafile",
+        "✓ connect",
+        "✓ app:onlyoffice",
+        "✓ app:seafile",
+        "✓ platform-update:wait",
+        "✓ update:seafile",
+        "✓ verify:onlyoffice",
+        "✓ verify:seafile",
+        "✓ routes",
+        "✓ compare",
+        "✓ network"
+      ]
+    },
+    {
+      "failedStep": null,
+      "path": "@app-dr seafile",
+      "status": "passed",
+      "steps": [
+        "✓ reset",
+        "✓ owner",
+        "✓ install:onlyoffice",
+        "✓ install:seafile",
+        "✓ connect",
+        "✓ app:onlyoffice",
+        "✓ app:seafile",
+        "✓ backup:bucket",
+        "✓ reset",
+        "✓ owner",
+        "✓ restore:bucket",
+        "✓ verify:onlyoffice",
+        "✓ verify:seafile",
+        "✓ routes",
+        "✓ network",
+        "✓ cleanup"
+      ]
+    }
+  ],
+  "status": "passed",
+  "summary": "`@update seafile` passed, `@app-dr seafile` passed"
+}

@@ -1,0 +1,117 @@
+{
+  "attachments": [],
+  "durationMs": 490609,
+  "error": null,
+  "status": "passed",
+  "steps": [
+    {
+      "checks": [],
+      "durationMs": 6170,
+      "error": null,
+      "status": "passed",
+      "title": "reset"
+    },
+    {
+      "checks": [],
+      "durationMs": 3946,
+      "error": null,
+      "status": "passed",
+      "title": "owner"
+    },
+    {
+      "checks": [],
+      "durationMs": 89653,
+      "error": null,
+      "status": "passed",
+      "title": "install:onlyoffice"
+    },
+    {
+      "checks": [],
+      "durationMs": 115520,
+      "error": null,
+      "status": "passed",
+      "title": "install:seafile"
+    },
+    {
+      "checks": [],
+      "durationMs": 19335,
+      "error": null,
+      "status": "passed",
+      "title": "connect"
+    },
+    {
+      "checks": [],
+      "durationMs": 736,
+      "error": null,
+      "status": "passed",
+      "title": "app:onlyoffice"
+    },
+    {
+      "checks": [
+        "✓ sign in",
+        "✓ create a library",
+        "✓ create a file in it",
+        "✓ upload a file, download it back and share it publicly",
+        "✓ create a Word document, write in it in the connected office editor, save it and read it back"
+      ],
+      "durationMs": 61829,
+      "error": null,
+      "status": "passed",
+      "title": "app:seafile"
+    },
+    {
+      "checks": [],
+      "durationMs": 44029,
+      "error": null,
+      "status": "passed",
+      "title": "platform-update:wait"
+    },
+    {
+      "checks": [],
+      "durationMs": 78147,
+      "error": null,
+      "status": "passed",
+      "title": "update:seafile"
+    },
+    {
+      "checks": [],
+      "durationMs": 430,
+      "error": null,
+      "status": "passed",
+      "title": "verify:onlyoffice"
+    },
+    {
+      "checks": [
+        "✓ sign in",
+        "✓ the uploaded file and its public link still serve its content",
+        "✓ the document written in the office editor kept its text and still opens in it",
+        "✓ create a new Word document, write in it in the office editor, save it and read it back"
+      ],
+      "durationMs": 60295,
+      "error": null,
+      "status": "passed",
+      "title": "verify:seafile"
+    },
+    {
+      "checks": [],
+      "durationMs": 1244,
+      "error": null,
+      "status": "passed",
+      "title": "routes"
+    },
+    {
+      "checks": [],
+      "durationMs": 4802,
+      "error": null,
+      "status": "passed",
+      "title": "compare"
+    },
+    {
+      "checks": [],
+      "durationMs": 32,
+      "error": null,
+      "status": "passed",
+      "title": "network"
+    }
+  ]
+}
