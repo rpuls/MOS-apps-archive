@@ -1,0 +1,104 @@
+{
+  "attachments": [],
+  "durationMs": 695695,
+  "error": null,
+  "status": "passed",
+  "steps": [
+    {
+      "durationMs": 6176,
+      "error": null,
+      "status": "passed",
+      "title": "reset"
+    },
+    {
+      "durationMs": 3454,
+      "error": null,
+      "status": "passed",
+      "title": "owner"
+    },
+    {
+      "durationMs": 25856,
+      "error": null,
+      "status": "passed",
+      "title": "install:onlyoffice"
+    },
+    {
+      "durationMs": 56405,
+      "error": null,
+      "status": "passed",
+      "title": "install:seafile"
+    },
+    {
+      "durationMs": 20301,
+      "error": null,
+      "status": "passed",
+      "title": "connect"
+    },
+    {
+      "durationMs": 2440,
+      "error": null,
+      "status": "passed",
+      "title": "app:onlyoffice"
+    },
+    {
+      "durationMs": 49188,
+      "error": null,
+      "status": "passed",
+      "title": "app:seafile"
+    },
+    {
+      "durationMs": 48943,
+      "error": null,
+      "status": "passed",
+      "title": "backup:bucket"
+    },
+    {
+      "durationMs": 6110,
+      "error": null,
+      "status": "passed",
+      "title": "reset"
+    },
+    {
+      "durationMs": 3481,
+      "error": null,
+      "status": "passed",
+      "title": "owner"
+    },
+    {
+      "durationMs": 378395,
+      "error": null,
+      "status": "passed",
+      "title": "restore:bucket"
+    },
+    {
+      "durationMs": 3326,
+      "error": null,
+      "status": "passed",
+      "title": "verify:onlyoffice"
+    },
+    {
+      "durationMs": 62416,
+      "error": null,
+      "status": "passed",
+      "title": "verify:seafile"
+    },
+    {
+      "durationMs": 1858,
+      "error": null,
+      "status": "passed",
+      "title": "routes"
+    },
+    {
+      "durationMs": 120,
+      "error": null,
+      "status": "passed",
+      "title": "network"
+    },
+    {
+      "durationMs": 20897,
+      "error": null,
+      "status": "passed",
+      "title": "cleanup"
+    }
+  ]
+}

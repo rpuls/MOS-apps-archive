@@ -1,0 +1,92 @@
+{
+  "attachments": [],
+  "durationMs": 464073,
+  "error": null,
+  "status": "passed",
+  "steps": [
+    {
+      "durationMs": 6185,
+      "error": null,
+      "status": "passed",
+      "title": "reset"
+    },
+    {
+      "durationMs": 4396,
+      "error": null,
+      "status": "passed",
+      "title": "owner"
+    },
+    {
+      "durationMs": 89398,
+      "error": null,
+      "status": "passed",
+      "title": "install:onlyoffice"
+    },
+    {
+      "durationMs": 117324,
+      "error": null,
+      "status": "passed",
+      "title": "install:seafile"
+    },
+    {
+      "durationMs": 19129,
+      "error": null,
+      "status": "passed",
+      "title": "connect"
+    },
+    {
+      "durationMs": 2441,
+      "error": null,
+      "status": "passed",
+      "title": "app:onlyoffice"
+    },
+    {
+      "durationMs": 46891,
+      "error": null,
+      "status": "passed",
+      "title": "app:seafile"
+    },
+    {
+      "durationMs": 42793,
+      "error": null,
+      "status": "passed",
+      "title": "platform-update:wait"
+    },
+    {
+      "durationMs": 82583,
+      "error": null,
+      "status": "passed",
+      "title": "update:seafile"
+    },
+    {
+      "durationMs": 1974,
+      "error": null,
+      "status": "passed",
+      "title": "verify:onlyoffice"
+    },
+    {
+      "durationMs": 39652,
+      "error": null,
+      "status": "passed",
+      "title": "verify:seafile"
+    },
+    {
+      "durationMs": 2279,
+      "error": null,
+      "status": "passed",
+      "title": "routes"
+    },
+    {
+      "durationMs": 3428,
+      "error": null,
+      "status": "passed",
+      "title": "compare"
+    },
+    {
+      "durationMs": 35,
+      "error": null,
+      "status": "passed",
+      "title": "network"
+    }
+  ]
+}
