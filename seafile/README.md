@@ -17,4 +17,6 @@
 
 | Ran | App version | Result | Pull request |
 | --- | --- | --- | --- |
+| [2026-10-07](13.0.28/drills/2026-10-07-810b3f6/) | 13.0.28 | passed | [#320](https://github.com/rpuls/my-own-suite/pull/320) |
+| [2026-10-07](13.0.28/drills/2026-10-07-6f3f871/) | 13.0.28 | passed | [#320](https://github.com/rpuls/my-own-suite/pull/320) |
 | [2026-10-07](13.0.28/drills/2026-10-07-68b5970/) | 13.0.28 | passed | [#320](https://github.com/rpuls/my-own-suite/pull/320) |
