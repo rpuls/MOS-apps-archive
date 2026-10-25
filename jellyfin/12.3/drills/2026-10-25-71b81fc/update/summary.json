@@ -1,0 +1,84 @@
+{
+  "attachments": [
+    {
+      "name": "screenshot",
+      "path": "test/e2e/results/20261025-140533-update-jellyfin/playwright/path--update-jellyfin/test-failed-1.png"
+    },
+    {
+      "name": "video",
+      "path": "test/e2e/results/20261025-140533-update-jellyfin/playwright/path--update-jellyfin/video.webm"
+    },
+    {
+      "name": "screenshot",
+      "path": "test/e2e/results/20261025-140533-update-jellyfin/playwright/path--update-jellyfin/test-failed-2.png"
+    },
+    {
+      "name": "error-context",
+      "path": "test/e2e/results/20261025-140533-update-jellyfin/playwright/path--update-jellyfin/error-context.md"
+    },
+    {
+      "name": "trace",
+      "path": "test/e2e/results/20261025-140533-update-jellyfin/playwright/path--update-jellyfin/trace.zip"
+    }
+  ],
+  "durationMs": 190170,
+  "error": "TimeoutError: locator.click: Timeout 45000ms exceeded.\nCall log:\n  - waiting for getByRole('dialog', { name: 'Review Jellyfin update' }).getByRole('button', { name: 'Update', exact: true })\n    - locator resolved to <button disabled type=\"button\" class=\"mos-btn mos-btn-primary\">Update</button>\n  - attempting click action\n    2 × waiting for element to be visible, enabled and stable\n      - element is not enabled\n    - retrying click action\n    - waiting 20ms\n    2 × waiting for element to be visible, enabled and stable\n      - element is not enabled\n    - retrying click action\n      - waiting 100ms\n    87 × waiting for element to be visible, enabled and stable",
+  "status": "failed",
+  "steps": [
+    {
+      "checks": [],
+      "durationMs": 3110,
+      "error": null,
+      "status": "passed",
+      "title": "reset"
+    },
+    {
+      "checks": [],
+      "durationMs": 2266,
+      "error": null,
+      "status": "passed",
+      "title": "owner"
+    },
+    {
+      "checks": [],
+      "durationMs": 242,
+      "error": null,
+      "status": "passed",
+      "title": "drive"
+    },
+    {
+      "checks": [],
+      "durationMs": 46515,
+      "error": null,
+      "status": "passed",
+      "title": "install:jellyfin"
+    },
+    {
+      "checks": [
+        "✓ sign in as the administrator chosen at install",
+        "✓ the Movies and Series libraries are already there",
+        "✓ copy a film onto the drive and plug it back in",
+        "✓ Jellyfin finds the film on its own",
+        "✓ the film plays"
+      ],
+      "durationMs": 39828,
+      "error": null,
+      "status": "passed",
+      "title": "app:jellyfin"
+    },
+    {
+      "checks": [],
+      "durationMs": 38731,
+      "error": null,
+      "status": "passed",
+      "title": "platform-update:wait"
+    },
+    {
+      "checks": [],
+      "durationMs": 49433,
+      "error": "TimeoutError: locator.click: Timeout 45000ms exceeded.\nCall log:\n  - waiting for getByRole('dialog', { name: 'Review Jellyfin update' }).getByRole('button', { name: 'Update', exact: true })\n    - locator resolved to <button disabled type=\"button\" class=\"mos-btn mos-btn-primary\">Update</button>\n  - attempting click action\n    2 × waiting for element to be visible, enabled and stable\n      - element is not enabled\n    - retrying click action\n    - waiting 20ms\n    2 × waiting for element to be visible, enabled and stable\n      - element is not enabled\n    - retrying click action",
+      "status": "failed",
+      "title": "update:jellyfin"
+    }
+  ]
+}
