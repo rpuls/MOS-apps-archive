@@ -29,6 +29,7 @@ Drills are run by Norn, MOS's update bot, on the change behind each app update b
 | --- | --- | --- | --- |
 | [actual-budget](actual-budget/) | 26.8.1 | 0.2.1 | 2026-10-16 |
 | [immich](immich/) | 3.2.4 | 0.8.3 | 2026-10-16 |
+| [jellyfin](jellyfin/) | — | — | — |
 | [onlyoffice](onlyoffice/) | 9.3.1 | 0.2.6 | 2026-10-16 |
 | [paperless-ngx](paperless-ngx/) | 3.3.0 | 0.3.4 | 2026-10-16 |
 | [radicale](radicale/) | 3.8.1 | 0.5.3 | 2026-10-16 |
