@@ -1,0 +1,100 @@
+{
+  "attachments": [],
+  "durationMs": 443454,
+  "error": null,
+  "status": "passed",
+  "steps": [
+    {
+      "checks": [],
+      "durationMs": 6087,
+      "error": null,
+      "status": "passed",
+      "title": "reset"
+    },
+    {
+      "checks": [],
+      "durationMs": 1953,
+      "error": null,
+      "status": "passed",
+      "title": "owner"
+    },
+    {
+      "checks": [],
+      "durationMs": 77498,
+      "error": null,
+      "status": "passed",
+      "title": "install:paperless-ngx"
+    },
+    {
+      "checks": [
+        "✓ sign in",
+        "✓ upload a document",
+        "✓ find it by its contents",
+        "✓ its original and thumbnail are stored"
+      ],
+      "durationMs": 11293,
+      "error": null,
+      "status": "passed",
+      "title": "app:paperless-ngx"
+    },
+    {
+      "checks": [],
+      "durationMs": 70780,
+      "error": null,
+      "status": "passed",
+      "title": "backup:bucket"
+    },
+    {
+      "checks": [],
+      "durationMs": 6081,
+      "error": null,
+      "status": "passed",
+      "title": "reset"
+    },
+    {
+      "checks": [],
+      "durationMs": 2124,
+      "error": null,
+      "status": "passed",
+      "title": "owner"
+    },
+    {
+      "checks": [],
+      "durationMs": 241971,
+      "error": null,
+      "status": "passed",
+      "title": "restore:bucket"
+    },
+    {
+      "checks": [
+        "✓ sign in",
+        "✓ the document and its search index are still there"
+      ],
+      "durationMs": 6583,
+      "error": null,
+      "status": "passed",
+      "title": "verify:paperless-ngx"
+    },
+    {
+      "checks": [],
+      "durationMs": 540,
+      "error": null,
+      "status": "passed",
+      "title": "routes"
+    },
+    {
+      "checks": [],
+      "durationMs": 19,
+      "error": null,
+      "status": "passed",
+      "title": "network"
+    },
+    {
+      "checks": [],
+      "durationMs": 15753,
+      "error": null,
+      "status": "passed",
+      "title": "cleanup"
+    }
+  ]
+}
