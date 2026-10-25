@@ -4,6 +4,7 @@
 
 | App version | Package | Published | Privacy posture | Suite commit |
 | --- | --- | --- | --- | --- |
+| 3.3.0 | [0.3.4](3.3.0/0.3.4/) | 2026-10-16 | private-by-default | [4f02c12](https://github.com/rpuls/my-own-suite/tree/4f02c1229c9d061741347fccec797222f783096c/apps/paperless-ngx) |
 | 3.1.3 | [0.3.2](3.1.3/0.3.2/) | 2026-10-02 | private-by-default | [1d61e7e](https://github.com/rpuls/my-own-suite/tree/1d61e7e7749721d034a9c3f9b4c506ee0a37127c/apps/paperless-ngx) |
 | 3.1.3 | [0.3.1](3.1.3/0.3.1/) | 2026-09-16 | private-by-default | [5b2c4a2](https://github.com/rpuls/my-own-suite/tree/5b2c4a2fa650a594c8481af0b7dcaca716643483/apps/paperless-ngx) |
 | 3.0.5 | [0.2.0](3.0.5/0.2.0/) | 2026-09-04 | private-by-default | [41efaba](https://github.com/rpuls/my-own-suite/tree/41efaba989112ec709836b5bacd5d0897bd73b44/apps/paperless-ngx) |

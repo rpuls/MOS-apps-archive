@@ -4,6 +4,7 @@
 
 | App version | Package | Published | Privacy posture | Suite commit |
 | --- | --- | --- | --- | --- |
+| 3.8.1 | [0.5.3](3.8.1/0.5.3/) | 2026-10-16 | private-by-default | [4f02c12](https://github.com/rpuls/my-own-suite/tree/4f02c1229c9d061741347fccec797222f783096c/apps/radicale) |
 | 3.7.6 | [0.5.1](3.7.6/0.5.1/) | 2026-09-16 | private-by-default | [5b2c4a2](https://github.com/rpuls/my-own-suite/tree/5b2c4a2fa650a594c8481af0b7dcaca716643483/apps/radicale) |
 | 3.7.6 | [0.5.0](3.7.6/0.5.0/) | 2026-09-04 | private-by-default | [41efaba](https://github.com/rpuls/my-own-suite/tree/41efaba989112ec709836b5bacd5d0897bd73b44/apps/radicale) |
 | 3.7.6 | [0.4.3](3.7.6/0.4.3/) | 2026-08-17 | private-by-default | [d324f38](https://github.com/rpuls/my-own-suite/tree/d324f38ed376faa79ed7c7ff5b46c0e224e9f028/apps/radicale) |

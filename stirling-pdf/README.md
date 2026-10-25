@@ -4,6 +4,7 @@
 
 | App version | Package | Published | Privacy posture | Suite commit |
 | --- | --- | --- | --- | --- |
+| 2.10.0 | [0.2.7](2.10.0/0.2.7/) | 2026-10-16 | external-dependency | [4f02c12](https://github.com/rpuls/my-own-suite/tree/4f02c1229c9d061741347fccec797222f783096c/apps/stirling-pdf) |
 | 2.10.0 | [0.2.6](2.10.0/0.2.6/) | 2026-09-16 | privacy-configured | [5b2c4a2](https://github.com/rpuls/my-own-suite/tree/5b2c4a2fa650a594c8481af0b7dcaca716643483/apps/stirling-pdf) |
 | 2.10.0 | [0.2.5](2.10.0/0.2.5/) | 2026-08-17 | privacy-configured | [d324f38](https://github.com/rpuls/my-own-suite/tree/d324f38ed376faa79ed7c7ff5b46c0e224e9f028/apps/stirling-pdf) |
 | 2.10.0 | [0.2.4](2.10.0/0.2.4/) | 2026-08-13 | privacy-configured | [b7b3596](https://github.com/rpuls/my-own-suite/tree/b7b35963a0c9f0901928964d344b677189d689c4/apps/stirling-pdf) |

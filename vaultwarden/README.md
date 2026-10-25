@@ -4,6 +4,7 @@
 
 | App version | Package | Published | Privacy posture | Suite commit |
 | --- | --- | --- | --- | --- |
+| 1.37.4 | [0.4.2](1.37.4/0.4.2/) | 2026-10-16 | owner-disableable | [4f02c12](https://github.com/rpuls/my-own-suite/tree/4f02c1229c9d061741347fccec797222f783096c/apps/vaultwarden) |
 | 1.37.0 | [0.4.0](1.37.0/0.4.0/) | 2026-10-02 | owner-disableable | [1d61e7e](https://github.com/rpuls/my-own-suite/tree/1d61e7e7749721d034a9c3f9b4c506ee0a37127c/apps/vaultwarden) |
 | 1.37.0 | [0.3.1](1.37.0/0.3.1/) | 2026-09-16 | owner-disableable | [5b2c4a2](https://github.com/rpuls/my-own-suite/tree/5b2c4a2fa650a594c8481af0b7dcaca716643483/apps/vaultwarden) |
 | 1.37.0 | [0.3.0](1.37.0/0.3.0/) | 2026-09-04 | owner-disableable | [41efaba](https://github.com/rpuls/my-own-suite/tree/41efaba989112ec709836b5bacd5d0897bd73b44/apps/vaultwarden) |

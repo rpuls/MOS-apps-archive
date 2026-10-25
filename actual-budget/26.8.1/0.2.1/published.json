@@ -1,0 +1,23 @@
+{
+  "app": "actual-budget",
+  "appVersion": "26.8.1",
+  "packageVersion": "0.2.1",
+  "packageDigest": "sha256:34cb000bcd8c5420242b84a5efe122b964a7fea19d727932ae32b7547ffe8632",
+  "publishedAt": "2026-10-16T00:43:43+02:00",
+  "publishedFrom": {
+    "commit": "4f02c1229c9d061741347fccec797222f783096c",
+    "repository": "https://github.com/rpuls/my-own-suite",
+    "url": "https://github.com/rpuls/my-own-suite/tree/4f02c1229c9d061741347fccec797222f783096c/apps/actual-budget"
+  },
+  "catalogEntry": {
+    "appVersion": "26.8.1",
+    "minimumMosVersion": "0.21.0",
+    "packageDigest": "sha256:34cb000bcd8c5420242b84a5efe122b964a7fea19d727932ae32b7547ffe8632",
+    "packageVersion": "0.2.1",
+    "path": "apps/actual-budget",
+    "privacy": {
+      "posture": "privacy-configured",
+      "status": "reviewed"
+    }
+  }
+}

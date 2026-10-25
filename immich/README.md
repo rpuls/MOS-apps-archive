@@ -4,6 +4,7 @@
 
 | App version | Package | Published | Privacy posture | Suite commit |
 | --- | --- | --- | --- | --- |
+| 3.2.4 | [0.8.3](3.2.4/0.8.3/) | 2026-10-16 | external-dependency | [4f02c12](https://github.com/rpuls/my-own-suite/tree/4f02c1229c9d061741347fccec797222f783096c/apps/immich) |
 | 3.1.0 | [0.8.1](3.1.0/0.8.1/) | 2026-09-16 | external-dependency | [5b2c4a2](https://github.com/rpuls/my-own-suite/tree/5b2c4a2fa650a594c8481af0b7dcaca716643483/apps/immich) |
 | 3.1.0 | [0.8.0](3.1.0/0.8.0/) | 2026-09-04 | external-dependency | [41efaba](https://github.com/rpuls/my-own-suite/tree/41efaba989112ec709836b5bacd5d0897bd73b44/apps/immich) |
 | 3.1.0 | [0.7.0](3.1.0/0.7.0/) | 2026-08-17 | external-dependency | [d324f38](https://github.com/rpuls/my-own-suite/tree/d324f38ed376faa79ed7c7ff5b46c0e224e9f028/apps/immich) |

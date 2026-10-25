@@ -1,0 +1,23 @@
+{
+  "app": "onlyoffice",
+  "appVersion": "9.3.1",
+  "packageVersion": "0.2.6",
+  "packageDigest": "sha256:cd3ec6dcdacc359682c783939ed6839db3cc86f6f76fdee7f6a4f95699fcb2c0",
+  "publishedAt": "2026-10-16T00:43:43+02:00",
+  "publishedFrom": {
+    "commit": "4f02c1229c9d061741347fccec797222f783096c",
+    "repository": "https://github.com/rpuls/my-own-suite",
+    "url": "https://github.com/rpuls/my-own-suite/tree/4f02c1229c9d061741347fccec797222f783096c/apps/onlyoffice"
+  },
+  "catalogEntry": {
+    "appVersion": "9.3.1",
+    "minimumMosVersion": "0.20.0",
+    "packageDigest": "sha256:cd3ec6dcdacc359682c783939ed6839db3cc86f6f76fdee7f6a4f95699fcb2c0",
+    "packageVersion": "0.2.6",
+    "path": "apps/onlyoffice",
+    "privacy": {
+      "posture": "privacy-configured",
+      "status": "reviewed"
+    }
+  }
+}

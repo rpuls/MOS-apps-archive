@@ -27,11 +27,11 @@ Drills are run by Norn, MOS's update bot, on the change behind each app update b
 
 | App | Latest app version | Package | Published |
 | --- | --- | --- | --- |
-| [actual-budget](actual-budget/) | 26.8.1 | 0.2.0 | 2026-10-02 |
-| [immich](immich/) | 3.1.0 | 0.8.1 | 2026-09-16 |
-| [onlyoffice](onlyoffice/) | 9.3.1 | 0.2.5 | 2026-09-16 |
-| [paperless-ngx](paperless-ngx/) | 3.1.3 | 0.3.2 | 2026-10-02 |
-| [radicale](radicale/) | 3.7.6 | 0.5.1 | 2026-09-16 |
-| [seafile](seafile/) | 13.0.21 | 0.3.1 | 2026-09-16 |
-| [stirling-pdf](stirling-pdf/) | 2.10.0 | 0.2.6 | 2026-09-16 |
-| [vaultwarden](vaultwarden/) | 1.37.0 | 0.4.0 | 2026-10-02 |
+| [actual-budget](actual-budget/) | 26.8.1 | 0.2.1 | 2026-10-16 |
+| [immich](immich/) | 3.2.4 | 0.8.3 | 2026-10-16 |
+| [onlyoffice](onlyoffice/) | 9.3.1 | 0.2.6 | 2026-10-16 |
+| [paperless-ngx](paperless-ngx/) | 3.3.0 | 0.3.4 | 2026-10-16 |
+| [radicale](radicale/) | 3.8.1 | 0.5.3 | 2026-10-16 |
+| [seafile](seafile/) | 13.0.28 | 0.3.3 | 2026-10-16 |
+| [stirling-pdf](stirling-pdf/) | 2.10.0 | 0.2.7 | 2026-10-16 |
+| [vaultwarden](vaultwarden/) | 1.37.4 | 0.4.2 | 2026-10-16 |
