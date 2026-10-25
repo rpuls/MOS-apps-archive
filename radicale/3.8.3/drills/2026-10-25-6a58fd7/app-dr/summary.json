@@ -1,0 +1,99 @@
+{
+  "attachments": [],
+  "durationMs": 214636,
+  "error": null,
+  "status": "passed",
+  "steps": [
+    {
+      "checks": [],
+      "durationMs": 6128,
+      "error": null,
+      "status": "passed",
+      "title": "reset"
+    },
+    {
+      "checks": [],
+      "durationMs": 2635,
+      "error": null,
+      "status": "passed",
+      "title": "owner"
+    },
+    {
+      "checks": [],
+      "durationMs": 6334,
+      "error": null,
+      "status": "passed",
+      "title": "install:radicale"
+    },
+    {
+      "checks": [
+        "✓ sign in",
+        "✓ create a calendar and an address book in the web UI",
+        "✓ put an event over CalDAV and a contact over CardDAV"
+      ],
+      "durationMs": 17494,
+      "error": null,
+      "status": "passed",
+      "title": "app:radicale"
+    },
+    {
+      "checks": [],
+      "durationMs": 35475,
+      "error": null,
+      "status": "passed",
+      "title": "backup:bucket"
+    },
+    {
+      "checks": [],
+      "durationMs": 6073,
+      "error": null,
+      "status": "passed",
+      "title": "reset"
+    },
+    {
+      "checks": [],
+      "durationMs": 3364,
+      "error": null,
+      "status": "passed",
+      "title": "owner"
+    },
+    {
+      "checks": [],
+      "durationMs": 114528,
+      "error": null,
+      "status": "passed",
+      "title": "restore:bucket"
+    },
+    {
+      "checks": [
+        "✓ sign in",
+        "✓ read the event and the contact back"
+      ],
+      "durationMs": 7363,
+      "error": null,
+      "status": "passed",
+      "title": "verify:radicale"
+    },
+    {
+      "checks": [],
+      "durationMs": 866,
+      "error": null,
+      "status": "passed",
+      "title": "routes"
+    },
+    {
+      "checks": [],
+      "durationMs": 26,
+      "error": null,
+      "status": "passed",
+      "title": "network"
+    },
+    {
+      "checks": [],
+      "durationMs": 10824,
+      "error": null,
+      "status": "passed",
+      "title": "cleanup"
+    }
+  ]
+}

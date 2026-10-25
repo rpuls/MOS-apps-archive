@@ -1,0 +1,85 @@
+{
+  "attachments": [],
+  "durationMs": 108180,
+  "error": null,
+  "status": "passed",
+  "steps": [
+    {
+      "checks": [],
+      "durationMs": 3197,
+      "error": null,
+      "status": "passed",
+      "title": "reset"
+    },
+    {
+      "checks": [],
+      "durationMs": 2597,
+      "error": null,
+      "status": "passed",
+      "title": "owner"
+    },
+    {
+      "checks": [],
+      "durationMs": 15827,
+      "error": null,
+      "status": "passed",
+      "title": "install:radicale"
+    },
+    {
+      "checks": [
+        "✓ sign in",
+        "✓ create a calendar and an address book in the web UI",
+        "✓ put an event over CalDAV and a contact over CardDAV"
+      ],
+      "durationMs": 13748,
+      "error": null,
+      "status": "passed",
+      "title": "app:radicale"
+    },
+    {
+      "checks": [],
+      "durationMs": 40902,
+      "error": null,
+      "status": "passed",
+      "title": "platform-update:wait"
+    },
+    {
+      "checks": [],
+      "durationMs": 15288,
+      "error": null,
+      "status": "passed",
+      "title": "update:radicale"
+    },
+    {
+      "checks": [
+        "✓ sign in",
+        "✓ read the event and the contact back"
+      ],
+      "durationMs": 7794,
+      "error": null,
+      "status": "passed",
+      "title": "verify:radicale"
+    },
+    {
+      "checks": [],
+      "durationMs": 831,
+      "error": null,
+      "status": "passed",
+      "title": "routes"
+    },
+    {
+      "checks": [],
+      "durationMs": 994,
+      "error": null,
+      "status": "passed",
+      "title": "compare"
+    },
+    {
+      "checks": [],
+      "durationMs": 20,
+      "error": null,
+      "status": "passed",
+      "title": "network"
+    }
+  ]
+}
