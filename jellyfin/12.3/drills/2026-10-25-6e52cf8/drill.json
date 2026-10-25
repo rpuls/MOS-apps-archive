@@ -1,0 +1,30 @@
+{
+  "app": "jellyfin",
+  "candidate": "6e52cf8b5bddd69951beb172a8305d1da2b34751",
+  "pullRequest": {
+    "number": 339,
+    "url": "https://github.com/rpuls/my-own-suite/pull/339"
+  },
+  "ranAt": "2026-10-25T12:54:35.922Z",
+  "runs": [
+    {
+      "failedStep": "install:jellyfin",
+      "path": "@update jellyfin",
+      "status": "failed",
+      "steps": [
+        "✓ reset",
+        "✓ owner",
+        "✓ drive",
+        "✗ install:jellyfin"
+      ]
+    },
+    {
+      "failedStep": null,
+      "path": "@app-dr jellyfin",
+      "status": "not run",
+      "steps": []
+    }
+  ],
+  "status": "failed",
+  "summary": "`@update jellyfin` failed at `install:jellyfin`, `@app-dr jellyfin` not run"
+}
