@@ -1,0 +1,95 @@
+{
+  "attachments": [],
+  "durationMs": 177614,
+  "error": null,
+  "status": "passed",
+  "steps": [
+    {
+      "checks": [],
+      "durationMs": 3095,
+      "error": null,
+      "status": "passed",
+      "title": "reset"
+    },
+    {
+      "checks": [],
+      "durationMs": 3344,
+      "error": null,
+      "status": "passed",
+      "title": "owner"
+    },
+    {
+      "checks": [],
+      "durationMs": 322,
+      "error": null,
+      "status": "passed",
+      "title": "drive"
+    },
+    {
+      "checks": [],
+      "durationMs": 46406,
+      "error": null,
+      "status": "passed",
+      "title": "install:jellyfin"
+    },
+    {
+      "checks": [
+        "✓ sign in as the administrator chosen at install",
+        "✓ the Movies and Series libraries are already there",
+        "✓ copy a film onto the drive and plug it back in",
+        "✓ Jellyfin finds the film on its own",
+        "✓ the film plays"
+      ],
+      "durationMs": 33970,
+      "error": null,
+      "status": "passed",
+      "title": "app:jellyfin"
+    },
+    {
+      "checks": [],
+      "durationMs": 21907,
+      "error": null,
+      "status": "passed",
+      "title": "platform-update:wait"
+    },
+    {
+      "checks": [],
+      "durationMs": 45262,
+      "error": null,
+      "status": "passed",
+      "title": "update:jellyfin"
+    },
+    {
+      "checks": [
+        "✓ sign in",
+        "✓ the film on the drive is still in the library",
+        "✓ and still plays"
+      ],
+      "durationMs": 15371,
+      "error": null,
+      "status": "passed",
+      "title": "verify:jellyfin"
+    },
+    {
+      "checks": [],
+      "durationMs": 944,
+      "error": null,
+      "status": "passed",
+      "title": "routes"
+    },
+    {
+      "checks": [],
+      "durationMs": 1465,
+      "error": null,
+      "status": "passed",
+      "title": "compare"
+    },
+    {
+      "checks": [],
+      "durationMs": 44,
+      "error": null,
+      "status": "passed",
+      "title": "network"
+    }
+  ]
+}

@@ -1,0 +1,109 @@
+{
+  "attachments": [],
+  "durationMs": 262377,
+  "error": null,
+  "status": "passed",
+  "steps": [
+    {
+      "checks": [],
+      "durationMs": 3083,
+      "error": null,
+      "status": "passed",
+      "title": "reset"
+    },
+    {
+      "checks": [],
+      "durationMs": 2073,
+      "error": null,
+      "status": "passed",
+      "title": "owner"
+    },
+    {
+      "checks": [],
+      "durationMs": 81,
+      "error": null,
+      "status": "passed",
+      "title": "drive"
+    },
+    {
+      "checks": [],
+      "durationMs": 13960,
+      "error": null,
+      "status": "passed",
+      "title": "install:jellyfin"
+    },
+    {
+      "checks": [
+        "✓ sign in as the administrator chosen at install",
+        "✓ the Movies and Series libraries are already there",
+        "✓ copy a film onto the drive and plug it back in",
+        "✓ Jellyfin finds the film on its own",
+        "✓ the film plays"
+      ],
+      "durationMs": 34138,
+      "error": null,
+      "status": "passed",
+      "title": "app:jellyfin"
+    },
+    {
+      "checks": [],
+      "durationMs": 41015,
+      "error": null,
+      "status": "passed",
+      "title": "backup:bucket"
+    },
+    {
+      "checks": [],
+      "durationMs": 6055,
+      "error": null,
+      "status": "passed",
+      "title": "reset"
+    },
+    {
+      "checks": [],
+      "durationMs": 2730,
+      "error": null,
+      "status": "passed",
+      "title": "owner"
+    },
+    {
+      "checks": [],
+      "durationMs": 128162,
+      "error": null,
+      "status": "passed",
+      "title": "restore:bucket"
+    },
+    {
+      "checks": [
+        "✓ sign in",
+        "✓ the film on the drive is still in the library",
+        "✓ and still plays"
+      ],
+      "durationMs": 9697,
+      "error": null,
+      "status": "passed",
+      "title": "verify:jellyfin"
+    },
+    {
+      "checks": [],
+      "durationMs": 716,
+      "error": null,
+      "status": "passed",
+      "title": "routes"
+    },
+    {
+      "checks": [],
+      "durationMs": 17,
+      "error": null,
+      "status": "passed",
+      "title": "network"
+    },
+    {
+      "checks": [],
+      "durationMs": 17441,
+      "error": null,
+      "status": "passed",
+      "title": "cleanup"
+    }
+  ]
+}
