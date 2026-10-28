@@ -27,12 +27,13 @@ Drills are run by Norn, MOS's update bot, on the change behind each app update b
 
 | App | Latest app version | Package | Published |
 | --- | --- | --- | --- |
-| [actual-budget](actual-budget/) | 26.8.1 | 0.2.1 | 2026-10-16 |
-| [immich](immich/) | 3.2.4 | 0.8.3 | 2026-10-16 |
-| [jellyfin](jellyfin/) | — | — | — |
+| [actual-budget](actual-budget/) | 26.8.1 | 0.2.2 | 2026-10-28 |
+| [immich](immich/) | 3.2.4 | 0.9.0 | 2026-10-28 |
+| [jellyfin](jellyfin/) | 12.3 | 0.1.2 | 2026-10-28 |
+| [navidrome](navidrome/) | 0.64.2 | 0.1.0 | 2026-10-28 |
 | [onlyoffice](onlyoffice/) | 9.3.1 | 0.2.6 | 2026-10-16 |
-| [paperless-ngx](paperless-ngx/) | 3.3.0 | 0.3.4 | 2026-10-16 |
-| [radicale](radicale/) | 3.8.1 | 0.5.3 | 2026-10-16 |
+| [paperless-ngx](paperless-ngx/) | 3.3.4 | 0.3.7 | 2026-10-28 |
+| [radicale](radicale/) | 3.8.3 | 0.5.5 | 2026-10-28 |
 | [seafile](seafile/) | 13.0.28 | 0.3.3 | 2026-10-16 |
 | [stirling-pdf](stirling-pdf/) | 2.10.0 | 0.2.7 | 2026-10-16 |
 | [vaultwarden](vaultwarden/) | 1.37.4 | 0.4.2 | 2026-10-16 |
