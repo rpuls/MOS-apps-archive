@@ -1,0 +1,62 @@
+{
+  "attachments": [
+    {
+      "name": "screenshot",
+      "path": "test/e2e/results/20261030-003807-app-dr-paperless-ngx/playwright/path--app-dr-paperless-ngx/test-failed-1.png"
+    },
+    {
+      "name": "video",
+      "path": "test/e2e/results/20261030-003807-app-dr-paperless-ngx/playwright/path--app-dr-paperless-ngx/video.webm"
+    },
+    {
+      "name": "screenshot",
+      "path": "test/e2e/results/20261030-003807-app-dr-paperless-ngx/playwright/path--app-dr-paperless-ngx/test-failed-2.png"
+    },
+    {
+      "name": "error-context",
+      "path": "test/e2e/results/20261030-003807-app-dr-paperless-ngx/playwright/path--app-dr-paperless-ngx/error-context.md"
+    },
+    {
+      "name": "trace",
+      "path": "test/e2e/results/20261030-003807-app-dr-paperless-ngx/playwright/path--app-dr-paperless-ngx/trace.zip"
+    }
+  ],
+  "durationMs": 181772,
+  "error": "Error: expect(locator).toBeVisible() failed\nLocator:  getByText('invoice-mose2emvu8x334').first()\nExpected: visible\nReceived: hidden\nTimeout:  30000ms\nCall log:\n  - Expect \"toBeVisible\" getByText('invoice-mose2emvu8x334').first() with timeout 30000ms\n  - waiting for getByText('invoice-mose2emvu8x334').first()\n    62 × locator resolved to <p _ngcontent-ng-c476042145=\"\" class=\"ms-2 mb-0 text-break\">Document invoice-mose2emvu8x334.pdf was added to …</p>\n       - unexpected value \"hidden\"\nApp page 1: http://paperless.mos.lab/documents?sort=created&reverse=1&page=1\n  snapshot: test/e2e/results/20261030-003807-app-dr-paperless-ngx/failures/04-paperless-ngx-page-1.yaml",
+  "status": "failed",
+  "steps": [
+    {
+      "checks": [],
+      "durationMs": 6127,
+      "error": null,
+      "status": "passed",
+      "title": "reset"
+    },
+    {
+      "checks": [],
+      "durationMs": 3210,
+      "error": null,
+      "status": "passed",
+      "title": "owner"
+    },
+    {
+      "checks": [],
+      "durationMs": 121703,
+      "error": null,
+      "status": "passed",
+      "title": "install:paperless-ngx"
+    },
+    {
+      "checks": [
+        "✓ sign in",
+        "✓ upload a document",
+        "✓ find it by its contents",
+        "✓ its original and thumbnail are stored"
+      ],
+      "durationMs": 42336,
+      "error": "Error: expect(locator).toBeVisible() failed\nLocator:  getByText('invoice-mose2emvu8x334').first()\nExpected: visible\nReceived: hidden\nTimeout:  30000ms\nCall log:\n  - Expect \"toBeVisible\" getByText('invoice-mose2emvu8x334').first() with timeout 30000ms\n  - waiting for getByText('invoice-mose2emvu8x334').first()\n    62 × locator resolved to <p _ngcontent-ng-c476042145=\"\" class=\"ms-2 mb-0 text-break\">Document invoice-mose2emvu8x334.pdf was added to …</p>\n       - unexpected value \"hidden\"\nApp page 1: http://paperless.mos.lab/documents?sort=created&reverse=1&page=1\n  snapshot: test/e2e/results/20261030-003807-app-dr-paperless-ngx/failures/04-paperless-ngx-page-1.yaml",
+      "status": "failed",
+      "title": "app:paperless-ngx"
+    }
+  ]
+}

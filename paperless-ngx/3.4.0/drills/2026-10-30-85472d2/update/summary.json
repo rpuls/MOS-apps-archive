@@ -1,0 +1,86 @@
+{
+  "attachments": [],
+  "durationMs": 422181,
+  "error": null,
+  "status": "passed",
+  "steps": [
+    {
+      "checks": [],
+      "durationMs": 6162,
+      "error": null,
+      "status": "passed",
+      "title": "reset"
+    },
+    {
+      "checks": [],
+      "durationMs": 2958,
+      "error": null,
+      "status": "passed",
+      "title": "owner"
+    },
+    {
+      "checks": [],
+      "durationMs": 180522,
+      "error": null,
+      "status": "passed",
+      "title": "install:paperless-ngx"
+    },
+    {
+      "checks": [
+        "✓ sign in",
+        "✓ upload a document",
+        "✓ find it by its contents",
+        "✓ its original and thumbnail are stored"
+      ],
+      "durationMs": 15221,
+      "error": null,
+      "status": "passed",
+      "title": "app:paperless-ngx"
+    },
+    {
+      "checks": [],
+      "durationMs": 39622,
+      "error": null,
+      "status": "passed",
+      "title": "platform-update:wait"
+    },
+    {
+      "checks": [],
+      "durationMs": 162616,
+      "error": null,
+      "status": "passed",
+      "title": "update:paperless-ngx"
+    },
+    {
+      "checks": [
+        "✓ sign in",
+        "✓ the document and its search index are still there"
+      ],
+      "durationMs": 7367,
+      "error": null,
+      "status": "passed",
+      "title": "verify:paperless-ngx"
+    },
+    {
+      "checks": [],
+      "durationMs": 809,
+      "error": null,
+      "status": "passed",
+      "title": "routes"
+    },
+    {
+      "checks": [],
+      "durationMs": 1905,
+      "error": null,
+      "status": "passed",
+      "title": "compare"
+    },
+    {
+      "checks": [],
+      "durationMs": 32,
+      "error": null,
+      "status": "passed",
+      "title": "network"
+    }
+  ]
+}
