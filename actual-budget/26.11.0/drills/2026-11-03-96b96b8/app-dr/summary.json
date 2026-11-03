@@ -1,0 +1,113 @@
+{
+  "attachments": [],
+  "durationMs": 292218,
+  "error": null,
+  "status": "passed",
+  "steps": [
+    {
+      "checks": [],
+      "durationMs": 3063,
+      "error": null,
+      "status": "passed",
+      "title": "reset"
+    },
+    {
+      "checks": [],
+      "durationMs": 1672,
+      "error": null,
+      "status": "passed",
+      "title": "owner"
+    },
+    {
+      "checks": [],
+      "durationMs": 30506,
+      "error": null,
+      "status": "passed",
+      "title": "dns01"
+    },
+    {
+      "checks": [],
+      "durationMs": 9595,
+      "error": null,
+      "status": "passed",
+      "title": "install:actual-budget"
+    },
+    {
+      "checks": [
+        "✓ set the server password and open a budget",
+        "✓ create an account with an opening balance",
+        "✓ record a payment",
+        "✓ budget money to a category"
+      ],
+      "durationMs": 32265,
+      "error": null,
+      "status": "passed",
+      "title": "app:actual-budget"
+    },
+    {
+      "checks": [],
+      "durationMs": 34597,
+      "error": null,
+      "status": "passed",
+      "title": "backup:bucket"
+    },
+    {
+      "checks": [],
+      "durationMs": 9086,
+      "error": null,
+      "status": "passed",
+      "title": "reset"
+    },
+    {
+      "checks": [],
+      "durationMs": 2460,
+      "error": null,
+      "status": "passed",
+      "title": "owner"
+    },
+    {
+      "checks": [],
+      "durationMs": 108021,
+      "error": null,
+      "status": "passed",
+      "title": "restore:bucket"
+    },
+    {
+      "checks": [],
+      "durationMs": 12590,
+      "error": null,
+      "status": "passed",
+      "title": "dns01"
+    },
+    {
+      "checks": [
+        "✓ sign in and download the budget"
+      ],
+      "durationMs": 30316,
+      "error": null,
+      "status": "passed",
+      "title": "verify:actual-budget"
+    },
+    {
+      "checks": [],
+      "durationMs": 888,
+      "error": null,
+      "status": "passed",
+      "title": "routes"
+    },
+    {
+      "checks": [],
+      "durationMs": 9,
+      "error": null,
+      "status": "passed",
+      "title": "network"
+    },
+    {
+      "checks": [],
+      "durationMs": 14478,
+      "error": null,
+      "status": "passed",
+      "title": "cleanup"
+    }
+  ]
+}

@@ -1,0 +1,92 @@
+{
+  "attachments": [],
+  "durationMs": 182386,
+  "error": null,
+  "status": "passed",
+  "steps": [
+    {
+      "checks": [],
+      "durationMs": 3085,
+      "error": null,
+      "status": "passed",
+      "title": "reset"
+    },
+    {
+      "checks": [],
+      "durationMs": 1773,
+      "error": null,
+      "status": "passed",
+      "title": "owner"
+    },
+    {
+      "checks": [],
+      "durationMs": 21107,
+      "error": null,
+      "status": "passed",
+      "title": "dns01"
+    },
+    {
+      "checks": [],
+      "durationMs": 24274,
+      "error": null,
+      "status": "passed",
+      "title": "install:actual-budget"
+    },
+    {
+      "checks": [
+        "✓ set the server password and open a budget",
+        "✓ create an account with an opening balance",
+        "✓ record a payment",
+        "✓ budget money to a category"
+      ],
+      "durationMs": 39926,
+      "error": null,
+      "status": "passed",
+      "title": "app:actual-budget"
+    },
+    {
+      "checks": [],
+      "durationMs": 32189,
+      "error": null,
+      "status": "passed",
+      "title": "platform-update:wait"
+    },
+    {
+      "checks": [],
+      "durationMs": 24151,
+      "error": null,
+      "status": "passed",
+      "title": "update:actual-budget"
+    },
+    {
+      "checks": [
+        "✓ sign in and download the budget"
+      ],
+      "durationMs": 30251,
+      "error": null,
+      "status": "passed",
+      "title": "verify:actual-budget"
+    },
+    {
+      "checks": [],
+      "durationMs": 879,
+      "error": null,
+      "status": "passed",
+      "title": "routes"
+    },
+    {
+      "checks": [],
+      "durationMs": 647,
+      "error": null,
+      "status": "passed",
+      "title": "compare"
+    },
+    {
+      "checks": [],
+      "durationMs": 19,
+      "error": null,
+      "status": "passed",
+      "title": "network"
+    }
+  ]
+}

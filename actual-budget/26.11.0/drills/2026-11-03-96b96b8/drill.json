@@ -1,0 +1,52 @@
+{
+  "app": "actual-budget",
+  "candidate": "96b96b8d149018e0ce4ee59bccb0e48f25b181d9",
+  "pullRequest": {
+    "number": 349,
+    "url": "https://github.com/rpuls/my-own-suite/pull/349"
+  },
+  "ranAt": "2026-11-03T13:02:01.548Z",
+  "runs": [
+    {
+      "failedStep": null,
+      "path": "@update actual-budget",
+      "status": "passed",
+      "steps": [
+        "✓ reset",
+        "✓ owner",
+        "✓ dns01",
+        "✓ install:actual-budget",
+        "✓ app:actual-budget",
+        "✓ platform-update:wait",
+        "✓ update:actual-budget",
+        "✓ verify:actual-budget",
+        "✓ routes",
+        "✓ compare",
+        "✓ network"
+      ]
+    },
+    {
+      "failedStep": null,
+      "path": "@app-dr actual-budget",
+      "status": "passed",
+      "steps": [
+        "✓ reset",
+        "✓ owner",
+        "✓ dns01",
+        "✓ install:actual-budget",
+        "✓ app:actual-budget",
+        "✓ backup:bucket",
+        "✓ reset",
+        "✓ owner",
+        "✓ restore:bucket",
+        "✓ dns01",
+        "✓ verify:actual-budget",
+        "✓ routes",
+        "✓ network",
+        "✓ cleanup"
+      ]
+    }
+  ],
+  "status": "passed",
+  "summary": "`@update actual-budget` passed, `@app-dr actual-budget` passed"
+}
