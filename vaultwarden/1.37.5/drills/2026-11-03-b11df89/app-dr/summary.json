@@ -1,0 +1,63 @@
+{
+  "attachments": [
+    {
+      "name": "screenshot",
+      "path": "test/e2e/results/20261103-124756-app-dr-vaultwarden/playwright/path--app-dr-vaultwarden/test-failed-1.png"
+    },
+    {
+      "name": "video",
+      "path": "test/e2e/results/20261103-124756-app-dr-vaultwarden/playwright/path--app-dr-vaultwarden/video.webm"
+    },
+    {
+      "name": "error-context",
+      "path": "test/e2e/results/20261103-124756-app-dr-vaultwarden/playwright/path--app-dr-vaultwarden/error-context.md"
+    },
+    {
+      "name": "trace",
+      "path": "test/e2e/results/20261103-124756-app-dr-vaultwarden/playwright/path--app-dr-vaultwarden/trace.zip"
+    }
+  ],
+  "durationMs": 104814,
+  "error": "TimeoutError: locator.click: Timeout 45000ms exceeded.\nCall log:\n  - waiting for getByRole('button', { name: /^New/iu }).first()\nApp page 1: https://vaultwarden.r41637410367.lab.my-demo-domain.site/#/vault\n  snapshot: test/e2e/results/20261103-124756-app-dr-vaultwarden/failures/05-vaultwarden-page-1.yaml",
+  "status": "failed",
+  "steps": [
+    {
+      "checks": [],
+      "durationMs": 6090,
+      "error": null,
+      "status": "passed",
+      "title": "reset"
+    },
+    {
+      "checks": [],
+      "durationMs": 2188,
+      "error": null,
+      "status": "passed",
+      "title": "owner"
+    },
+    {
+      "checks": [],
+      "durationMs": 30644,
+      "error": null,
+      "status": "passed",
+      "title": "dns01"
+    },
+    {
+      "checks": [],
+      "durationMs": 9000,
+      "error": null,
+      "status": "passed",
+      "title": "install:vaultwarden"
+    },
+    {
+      "checks": [
+        "✓ create the vault account",
+        "✗ save a login item"
+      ],
+      "durationMs": 51861,
+      "error": "TimeoutError: locator.click: Timeout 45000ms exceeded.\nCall log:\n  - waiting for getByRole('button', { name: /^New/iu }).first()\nApp page 1: https://vaultwarden.r41637410367.lab.my-demo-domain.site/#/vault\n  snapshot: test/e2e/results/20261103-124756-app-dr-vaultwarden/failures/05-vaultwarden-page-1.yaml",
+      "status": "failed",
+      "title": "app:vaultwarden"
+    }
+  ]
+}

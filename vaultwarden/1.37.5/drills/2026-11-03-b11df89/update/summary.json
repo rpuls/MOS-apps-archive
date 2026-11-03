@@ -1,0 +1,91 @@
+{
+  "attachments": [
+    {
+      "name": "screenshot",
+      "path": "test/e2e/results/20261103-124431-update-vaultwarden/playwright/path--update-vaultwarden/test-failed-1.png"
+    },
+    {
+      "name": "video",
+      "path": "test/e2e/results/20261103-124431-update-vaultwarden/playwright/path--update-vaultwarden/video.webm"
+    },
+    {
+      "name": "screenshot",
+      "path": "test/e2e/results/20261103-124431-update-vaultwarden/playwright/path--update-vaultwarden/test-failed-2.png"
+    },
+    {
+      "name": "error-context",
+      "path": "test/e2e/results/20261103-124431-update-vaultwarden/playwright/path--update-vaultwarden/error-context.md"
+    },
+    {
+      "name": "trace",
+      "path": "test/e2e/results/20261103-124431-update-vaultwarden/playwright/path--update-vaultwarden/trace.zip"
+    }
+  ],
+  "durationMs": 204609,
+  "error": "Error: expect(locator).toHaveValue(expected) failed\nLocator:  getByRole('dialog', { name: 'View Login' }).getByRole('textbox', { name: 'Password' })\nExpected: \"E2E-mw0oktzt-item-secret!\"\nReceived: \"••••••••\"\nTimeout:  30000ms\nCall log:\n  - Expect \"toHaveValue\" getByRole('dialog', { name: 'View Login' }).getByRole('textbox', { name: 'Password' }) with timeout 30000ms\n  - waiting for getByRole('dialog', { name: 'View Login' }).getByRole('textbox', { name: 'Password' })\n    64 × locator resolved to <input readonly bitinput=\"\" id=\"password\" type=\"password\" aria-readonly=\"true\" data-testid=\"login-password\" class=\"[&:is(input,select)]:tw-h-full [&:is(input,textarea):disabled]:!tw-placeholder-fg-inactive [&:is(input,textarea):disabled]:!tw-text-fg-inactive [&:is(input,textarea):disabled]:tw-bg-bg-secondary [&:is(textarea)]:tw-h-auto [&:is(textarea)]:tw-min-h-[30px] [&:is(textarea)]:tw-resize-none [&_option]:tw-bg-background [&_option]:tw-text-main focus:tw-outline-none tw-bg-transparent tw-block tw…/>\n       - unexpected value \"••••••••\"\nApp page 1: https://vaultwarden.r41637410367.lab.my-demo-domain.site/#/lock\n  snapshot: test/e2e/results/20261103-124431-update-vaultwarden/failures/08-vaultwarden-page-1.yaml\nApp page 2: https://vaultwarden.r41637410367.lab.my-demo-domain.site/#/vault?itemId=a2af6e8d-dd7f-4c35-9514-2a4dd6ba4884&action=view\n  snapshot: test/e2e/results/20261103-124431-update-vaultwarden/failures/08-vaultwarden-page-2.yaml",
+  "status": "failed",
+  "steps": [
+    {
+      "checks": [],
+      "durationMs": 3069,
+      "error": null,
+      "status": "passed",
+      "title": "reset"
+    },
+    {
+      "checks": [],
+      "durationMs": 1864,
+      "error": null,
+      "status": "passed",
+      "title": "owner"
+    },
+    {
+      "checks": [],
+      "durationMs": 21500,
+      "error": null,
+      "status": "passed",
+      "title": "dns01"
+    },
+    {
+      "checks": [],
+      "durationMs": 19020,
+      "error": null,
+      "status": "passed",
+      "title": "install:vaultwarden"
+    },
+    {
+      "checks": [
+        "✓ create the vault account",
+        "✓ save a login item"
+      ],
+      "durationMs": 12163,
+      "error": null,
+      "status": "passed",
+      "title": "app:vaultwarden"
+    },
+    {
+      "checks": [],
+      "durationMs": 34900,
+      "error": null,
+      "status": "passed",
+      "title": "platform-update:wait"
+    },
+    {
+      "checks": [],
+      "durationMs": 64594,
+      "error": null,
+      "status": "passed",
+      "title": "update:vaultwarden"
+    },
+    {
+      "checks": [
+        "✓ sign in from a new device",
+        "✗ the item still decrypts to what was saved"
+      ],
+      "durationMs": 39249,
+      "error": "Error: expect(locator).toHaveValue(expected) failed\nLocator:  getByRole('dialog', { name: 'View Login' }).getByRole('textbox', { name: 'Password' })\nExpected: \"E2E-mw0oktzt-item-secret!\"\nReceived: \"••••••••\"\nTimeout:  30000ms\nCall log:\n  - Expect \"toHaveValue\" getByRole('dialog', { name: 'View Login' }).getByRole('textbox', { name: 'Password' }) with timeout 30000ms\n  - waiting for getByRole('dialog', { name: 'View Login' }).getByRole('textbox', { name: 'Password' })\n    64 × locator resolved to <input readonly bitinput=\"\" id=\"password\" type=\"password\" aria-readonly=\"true\" data-testid=\"login-password\" class=\"[&:is(input,select)]:tw-h-full [&:is(input,textarea):disabled]:!tw-placeholder-fg-inactive [&:is(input,textarea):disabled]:!tw-text-fg-inactive [&:is(input,textarea):disabled]:tw-bg-bg-secondary [&:is(textarea)]:tw-h-auto [&:is(textarea)]:tw-min-h-[30px] [&:is(textarea)]:tw-resize-none [&_option]:tw-bg-background [&_option]:tw-text-main focus:tw-outline-none tw-bg-transparent tw-block tw…/>\n       - unexpected value \"••••••••\"\nApp page 1: https://vaultwarden.r41637410367.lab.my-demo-domain.site/#/lock\n  snapshot: test/e2e/results/20261103-124431-update-vaultwarden/failures/08-vaultwarden-page-1.yaml",
+      "status": "failed",
+      "title": "verify:vaultwarden"
+    }
+  ]
+}
