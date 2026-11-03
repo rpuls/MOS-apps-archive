@@ -1,0 +1,112 @@
+{
+  "attachments": [],
+  "durationMs": 256565,
+  "error": null,
+  "status": "passed",
+  "steps": [
+    {
+      "checks": [],
+      "durationMs": 6144,
+      "error": null,
+      "status": "passed",
+      "title": "reset"
+    },
+    {
+      "checks": [],
+      "durationMs": 3286,
+      "error": null,
+      "status": "passed",
+      "title": "owner"
+    },
+    {
+      "checks": [],
+      "durationMs": 32649,
+      "error": null,
+      "status": "passed",
+      "title": "dns01"
+    },
+    {
+      "checks": [],
+      "durationMs": 6834,
+      "error": null,
+      "status": "passed",
+      "title": "install:vaultwarden"
+    },
+    {
+      "checks": [
+        "✓ create the vault account",
+        "✓ save a login item"
+      ],
+      "durationMs": 18590,
+      "error": null,
+      "status": "passed",
+      "title": "app:vaultwarden"
+    },
+    {
+      "checks": [],
+      "durationMs": 34564,
+      "error": null,
+      "status": "passed",
+      "title": "backup:bucket"
+    },
+    {
+      "checks": [],
+      "durationMs": 6081,
+      "error": null,
+      "status": "passed",
+      "title": "reset"
+    },
+    {
+      "checks": [],
+      "durationMs": 4134,
+      "error": null,
+      "status": "passed",
+      "title": "owner"
+    },
+    {
+      "checks": [],
+      "durationMs": 99008,
+      "error": null,
+      "status": "passed",
+      "title": "restore:bucket"
+    },
+    {
+      "checks": [],
+      "durationMs": 13670,
+      "error": null,
+      "status": "passed",
+      "title": "dns01"
+    },
+    {
+      "checks": [
+        "✓ sign in from a new device",
+        "✓ the item still decrypts to what was saved"
+      ],
+      "durationMs": 13313,
+      "error": null,
+      "status": "passed",
+      "title": "verify:vaultwarden"
+    },
+    {
+      "checks": [],
+      "durationMs": 1171,
+      "error": null,
+      "status": "passed",
+      "title": "routes"
+    },
+    {
+      "checks": [],
+      "durationMs": 38,
+      "error": null,
+      "status": "passed",
+      "title": "network"
+    },
+    {
+      "checks": [],
+      "durationMs": 13453,
+      "error": null,
+      "status": "passed",
+      "title": "cleanup"
+    }
+  ]
+}

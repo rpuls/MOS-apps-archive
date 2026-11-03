@@ -1,0 +1,52 @@
+{
+  "app": "vaultwarden",
+  "candidate": "7593085303b45d8a20126c1ab53902d41a23a37b",
+  "pullRequest": {
+    "number": 348,
+    "url": "https://github.com/rpuls/my-own-suite/pull/348"
+  },
+  "ranAt": "2026-11-03T13:09:46.315Z",
+  "runs": [
+    {
+      "failedStep": null,
+      "path": "@update vaultwarden",
+      "status": "passed",
+      "steps": [
+        "✓ reset",
+        "✓ owner",
+        "✓ dns01",
+        "✓ install:vaultwarden",
+        "✓ app:vaultwarden",
+        "✓ platform-update:wait",
+        "✓ update:vaultwarden",
+        "✓ verify:vaultwarden",
+        "✓ routes",
+        "✓ compare",
+        "✓ network"
+      ]
+    },
+    {
+      "failedStep": null,
+      "path": "@app-dr vaultwarden",
+      "status": "passed",
+      "steps": [
+        "✓ reset",
+        "✓ owner",
+        "✓ dns01",
+        "✓ install:vaultwarden",
+        "✓ app:vaultwarden",
+        "✓ backup:bucket",
+        "✓ reset",
+        "✓ owner",
+        "✓ restore:bucket",
+        "✓ dns01",
+        "✓ verify:vaultwarden",
+        "✓ routes",
+        "✓ network",
+        "✓ cleanup"
+      ]
+    }
+  ],
+  "status": "passed",
+  "summary": "`@update vaultwarden` passed, `@app-dr vaultwarden` passed"
+}

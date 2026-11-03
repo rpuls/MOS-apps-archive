@@ -1,0 +1,91 @@
+{
+  "attachments": [],
+  "durationMs": 156171,
+  "error": null,
+  "status": "passed",
+  "steps": [
+    {
+      "checks": [],
+      "durationMs": 6136,
+      "error": null,
+      "status": "passed",
+      "title": "reset"
+    },
+    {
+      "checks": [],
+      "durationMs": 2812,
+      "error": null,
+      "status": "passed",
+      "title": "owner"
+    },
+    {
+      "checks": [],
+      "durationMs": 26853,
+      "error": null,
+      "status": "passed",
+      "title": "dns01"
+    },
+    {
+      "checks": [],
+      "durationMs": 19646,
+      "error": null,
+      "status": "passed",
+      "title": "install:vaultwarden"
+    },
+    {
+      "checks": [
+        "✓ create the vault account",
+        "✓ save a login item"
+      ],
+      "durationMs": 20600,
+      "error": null,
+      "status": "passed",
+      "title": "app:vaultwarden"
+    },
+    {
+      "checks": [],
+      "durationMs": 43478,
+      "error": null,
+      "status": "passed",
+      "title": "platform-update:wait"
+    },
+    {
+      "checks": [],
+      "durationMs": 15934,
+      "error": null,
+      "status": "passed",
+      "title": "update:vaultwarden"
+    },
+    {
+      "checks": [
+        "✓ sign in from a new device",
+        "✓ the item still decrypts to what was saved"
+      ],
+      "durationMs": 13751,
+      "error": null,
+      "status": "passed",
+      "title": "verify:vaultwarden"
+    },
+    {
+      "checks": [],
+      "durationMs": 889,
+      "error": null,
+      "status": "passed",
+      "title": "routes"
+    },
+    {
+      "checks": [],
+      "durationMs": 1159,
+      "error": null,
+      "status": "passed",
+      "title": "compare"
+    },
+    {
+      "checks": [],
+      "durationMs": 26,
+      "error": null,
+      "status": "passed",
+      "title": "network"
+    }
+  ]
+}
