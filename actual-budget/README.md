@@ -12,4 +12,6 @@
 
 ## Update drills
 
-None yet.
+| Ran | App version | Result | Pull request |
+| --- | --- | --- | --- |
+| [2026-11-03](26.11.0/drills/2026-11-03-96b96b8/) | 26.11.0 | passed | [#349](https://github.com/rpuls/my-own-suite/pull/349) |
