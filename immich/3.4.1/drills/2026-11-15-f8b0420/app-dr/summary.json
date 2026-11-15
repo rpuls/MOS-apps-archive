@@ -1,0 +1,109 @@
+{
+  "attachments": [],
+  "durationMs": 1212307,
+  "error": null,
+  "status": "passed",
+  "steps": [
+    {
+      "checks": [],
+      "durationMs": 9284,
+      "error": null,
+      "status": "passed",
+      "title": "reset"
+    },
+    {
+      "checks": [],
+      "durationMs": 2546,
+      "error": null,
+      "status": "passed",
+      "title": "owner"
+    },
+    {
+      "checks": [],
+      "durationMs": 95,
+      "error": null,
+      "status": "passed",
+      "title": "drive"
+    },
+    {
+      "checks": [],
+      "durationMs": 59709,
+      "error": null,
+      "status": "passed",
+      "title": "install:immich"
+    },
+    {
+      "checks": [
+        "✓ register the admin and sign in",
+        "✓ upload photos",
+        "✓ its background jobs make previews",
+        "✓ put them in an album",
+        "✓ copy a photo onto the drive and plug it back in"
+      ],
+      "durationMs": 71481,
+      "error": null,
+      "status": "passed",
+      "title": "app:immich"
+    },
+    {
+      "checks": [],
+      "durationMs": 88756,
+      "error": null,
+      "status": "passed",
+      "title": "backup:bucket"
+    },
+    {
+      "checks": [],
+      "durationMs": 9099,
+      "error": null,
+      "status": "passed",
+      "title": "reset"
+    },
+    {
+      "checks": [],
+      "durationMs": 3355,
+      "error": null,
+      "status": "passed",
+      "title": "owner"
+    },
+    {
+      "checks": [],
+      "durationMs": 932639,
+      "error": null,
+      "status": "passed",
+      "title": "restore:bucket"
+    },
+    {
+      "checks": [
+        "✓ sign in",
+        "✓ the photos, their files and the album are still there",
+        "✓ the photo on the drive is still there"
+      ],
+      "durationMs": 9585,
+      "error": null,
+      "status": "passed",
+      "title": "verify:immich"
+    },
+    {
+      "checks": [],
+      "durationMs": 1053,
+      "error": null,
+      "status": "passed",
+      "title": "routes"
+    },
+    {
+      "checks": [],
+      "durationMs": 110,
+      "error": null,
+      "status": "passed",
+      "title": "network"
+    },
+    {
+      "checks": [],
+      "durationMs": 16416,
+      "error": null,
+      "status": "passed",
+      "title": "cleanup"
+    }
+  ]
+}

@@ -1,0 +1,95 @@
+{
+  "attachments": [],
+  "durationMs": 415318,
+  "error": null,
+  "status": "passed",
+  "steps": [
+    {
+      "checks": [],
+      "durationMs": 6198,
+      "error": null,
+      "status": "passed",
+      "title": "reset"
+    },
+    {
+      "checks": [],
+      "durationMs": 2702,
+      "error": null,
+      "status": "passed",
+      "title": "owner"
+    },
+    {
+      "checks": [],
+      "durationMs": 355,
+      "error": null,
+      "status": "passed",
+      "title": "drive"
+    },
+    {
+      "checks": [],
+      "durationMs": 165224,
+      "error": null,
+      "status": "passed",
+      "title": "install:immich"
+    },
+    {
+      "checks": [
+        "✓ register the admin and sign in",
+        "✓ upload photos",
+        "✓ its background jobs make previews",
+        "✓ put them in an album",
+        "✓ copy a photo onto the drive and plug it back in"
+      ],
+      "durationMs": 53391,
+      "error": null,
+      "status": "passed",
+      "title": "app:immich"
+    },
+    {
+      "checks": [],
+      "durationMs": 43425,
+      "error": null,
+      "status": "passed",
+      "title": "platform-update:wait"
+    },
+    {
+      "checks": [],
+      "durationMs": 113223,
+      "error": null,
+      "status": "passed",
+      "title": "update:immich"
+    },
+    {
+      "checks": [
+        "✓ sign in",
+        "✓ the photos, their files and the album are still there",
+        "✓ the photo on the drive is still there"
+      ],
+      "durationMs": 18621,
+      "error": null,
+      "status": "passed",
+      "title": "verify:immich"
+    },
+    {
+      "checks": [],
+      "durationMs": 1646,
+      "error": null,
+      "status": "passed",
+      "title": "routes"
+    },
+    {
+      "checks": [],
+      "durationMs": 3719,
+      "error": null,
+      "status": "passed",
+      "title": "compare"
+    },
+    {
+      "checks": [],
+      "durationMs": 156,
+      "error": null,
+      "status": "passed",
+      "title": "network"
+    }
+  ]
+}
