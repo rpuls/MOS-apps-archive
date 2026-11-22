@@ -1,0 +1,97 @@
+{
+  "attachments": [],
+  "durationMs": 369239,
+  "error": null,
+  "status": "passed",
+  "steps": [
+    {
+      "checks": [],
+      "durationMs": 9220,
+      "error": null,
+      "status": "passed",
+      "title": "reset"
+    },
+    {
+      "checks": [],
+      "durationMs": 3016,
+      "error": null,
+      "status": "passed",
+      "title": "owner"
+    },
+    {
+      "checks": [],
+      "durationMs": 77445,
+      "error": null,
+      "status": "passed",
+      "title": "install:stirling-pdf"
+    },
+    {
+      "checks": [
+        "✓ sign in, replacing the default password",
+        "✓ merge two PDFs and download the result"
+      ],
+      "durationMs": 25693,
+      "error": null,
+      "status": "passed",
+      "title": "app:stirling-pdf"
+    },
+    {
+      "checks": [],
+      "durationMs": 45792,
+      "error": null,
+      "status": "passed",
+      "title": "backup:bucket"
+    },
+    {
+      "checks": [],
+      "durationMs": 9131,
+      "error": null,
+      "status": "passed",
+      "title": "reset"
+    },
+    {
+      "checks": [],
+      "durationMs": 3364,
+      "error": null,
+      "status": "passed",
+      "title": "owner"
+    },
+    {
+      "checks": [],
+      "durationMs": 171789,
+      "error": null,
+      "status": "passed",
+      "title": "restore:bucket"
+    },
+    {
+      "checks": [
+        "✓ sign in with the password the journey set"
+      ],
+      "durationMs": 8051,
+      "error": null,
+      "status": "passed",
+      "title": "verify:stirling-pdf"
+    },
+    {
+      "checks": [],
+      "durationMs": 908,
+      "error": null,
+      "status": "passed",
+      "title": "routes"
+    },
+    {
+      "checks": [],
+      "durationMs": 27,
+      "error": null,
+      "status": "passed",
+      "title": "network"
+    },
+    {
+      "checks": [],
+      "durationMs": 10976,
+      "error": null,
+      "status": "passed",
+      "title": "cleanup"
+    }
+  ]
+}

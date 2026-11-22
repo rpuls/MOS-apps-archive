@@ -1,0 +1,49 @@
+{
+  "app": "stirling-pdf",
+  "candidate": "031528e4d7cc5b6b154828824be5309fc51a0019",
+  "pullRequest": {
+    "number": 365,
+    "url": "https://github.com/rpuls/my-own-suite/pull/365"
+  },
+  "ranAt": "2026-11-22T17:31:40.919Z",
+  "runs": [
+    {
+      "failedStep": null,
+      "path": "@update stirling-pdf",
+      "status": "passed",
+      "steps": [
+        "✓ reset",
+        "✓ owner",
+        "✓ install:stirling-pdf",
+        "✓ app:stirling-pdf",
+        "✓ platform-update:wait",
+        "✓ update:stirling-pdf",
+        "✓ verify:stirling-pdf",
+        "✓ routes",
+        "✓ compare",
+        "✓ network"
+      ]
+    },
+    {
+      "failedStep": null,
+      "path": "@app-dr stirling-pdf",
+      "status": "passed",
+      "steps": [
+        "✓ reset",
+        "✓ owner",
+        "✓ install:stirling-pdf",
+        "✓ app:stirling-pdf",
+        "✓ backup:bucket",
+        "✓ reset",
+        "✓ owner",
+        "✓ restore:bucket",
+        "✓ verify:stirling-pdf",
+        "✓ routes",
+        "✓ network",
+        "✓ cleanup"
+      ]
+    }
+  ],
+  "status": "passed",
+  "summary": "`@update stirling-pdf` passed, `@app-dr stirling-pdf` passed"
+}

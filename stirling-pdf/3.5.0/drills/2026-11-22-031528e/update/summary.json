@@ -1,0 +1,83 @@
+{
+  "attachments": [],
+  "durationMs": 338670,
+  "error": null,
+  "status": "passed",
+  "steps": [
+    {
+      "checks": [],
+      "durationMs": 6138,
+      "error": null,
+      "status": "passed",
+      "title": "reset"
+    },
+    {
+      "checks": [],
+      "durationMs": 2838,
+      "error": null,
+      "status": "passed",
+      "title": "owner"
+    },
+    {
+      "checks": [],
+      "durationMs": 145647,
+      "error": null,
+      "status": "passed",
+      "title": "install:stirling-pdf"
+    },
+    {
+      "checks": [
+        "✓ sign in, replacing the default password",
+        "✓ merge two PDFs and download the result"
+      ],
+      "durationMs": 33480,
+      "error": null,
+      "status": "passed",
+      "title": "app:stirling-pdf"
+    },
+    {
+      "checks": [],
+      "durationMs": 38613,
+      "error": null,
+      "status": "passed",
+      "title": "platform-update:wait"
+    },
+    {
+      "checks": [],
+      "durationMs": 96883,
+      "error": null,
+      "status": "passed",
+      "title": "update:stirling-pdf"
+    },
+    {
+      "checks": [
+        "✓ sign in with the password the journey set"
+      ],
+      "durationMs": 8102,
+      "error": null,
+      "status": "passed",
+      "title": "verify:stirling-pdf"
+    },
+    {
+      "checks": [],
+      "durationMs": 771,
+      "error": null,
+      "status": "passed",
+      "title": "routes"
+    },
+    {
+      "checks": [],
+      "durationMs": 1221,
+      "error": null,
+      "status": "passed",
+      "title": "compare"
+    },
+    {
+      "checks": [],
+      "durationMs": 44,
+      "error": null,
+      "status": "passed",
+      "title": "network"
+    }
+  ]
+}
